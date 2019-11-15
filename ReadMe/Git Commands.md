@@ -1,4 +1,3 @@
-#### Anand Nandagiri
 # ReadMe Git Commands
 
 Clone Git to your local
