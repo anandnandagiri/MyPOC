@@ -1,0 +1,14 @@
+{
+  "name": "gcpvm",
+  "version": "1.0.0",
+  "description": "This will restart or start vm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anand Nandagiri",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/compute": "^1.1.1"
+  }
+}
