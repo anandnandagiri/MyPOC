@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DIRepo", "DIRepo\DIRepo.csproj", "{4105FD32-34F8-4E86-AC3E-E9353A66D244}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{60A67ECC-9FAE-4DB3-B2C5-740ECC65B19D}"
+	ProjectSection(SolutionItems) = preProject
+		Docs\ReadMe.txt = Docs\ReadMe.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{DD209122-F5A3-433A-B0A7-D578DB1E3BF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4105FD32-34F8-4E86-AC3E-E9353A66D244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4105FD32-34F8-4E86-AC3E-E9353A66D244}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4105FD32-34F8-4E86-AC3E-E9353A66D244}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4105FD32-34F8-4E86-AC3E-E9353A66D244}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4105FD32-34F8-4E86-AC3E-E9353A66D244} = {DD209122-F5A3-433A-B0A7-D578DB1E3BF2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FEB75196-25EA-4DDA-A45B-5517BD1D82F0}
+	EndGlobalSection
+EndGlobal
