@@ -1,0 +1,50 @@
+Web Server
+App Server
+DB Server
+
+
+
+1)	WebAPI Self Host 
+		Using:
+			OWIN Framework
+			.NET 4.5
+
+		Why & Purpose:
+		We could run microservice with WebAPI OWIN Framework with out hosting it on IIS.
+		Also we can use NANO Server(Part of Windows 2016) OR Docker to run this App which is best choice to run MicroServices.
+		
+		
+2)	WCF Service (Not Yet Done)
+		Using:
+			.NET 4.5
+		
+		Why & Purpose:
+		We could use this WCF Service for NFR (Non Function Requriment) as central repository for logging expection and audit.
+		Fire and Forget is best choice to use WCF Service with out blocking current Thread in using application.
+
+3)	MongoDB
+		Using: 
+			.NET 4.5 
+			Entity Framework 6.1.2
+			CData MongoDB Provider (This is Third Party Provide which need to buy. Later we can replace with Entity Framework Core which is still in RC Phase)
+	
+		
+
+4)	AngularJS 2 (With TypeScript)
+		Using: 
+			Node.JS & NPM
+			Visual Studio 2015/2013 TypeScript
+
+		Why & Purpose:
+		Client Side MV* Framework
+		
+
+
+5)	NodeJS & NPM
+
+		
+6)	NANO Server
+	Hardware Specification
+		
+
+7)	Docker & VM Container in Azure

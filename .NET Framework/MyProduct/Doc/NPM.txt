@@ -1,0 +1,44 @@
+
+npm -v (Version)
+npm install npm@latest -g (Get Latest Version of NPM)
+npm install -g (g Indicates Global)
+npm config ls -l
+
+
+npm install typescript
+npm install typescript@latest -g
+npm install systemjs
+npm install -g cordova
+
+npm install express
+npm install nodemon
+
+ASP.NET Core with AngularJS
+----------------------------
+npm install -g yo
+npm install -g yo generator-aspnet-spa
+npm install -g webpack	
+
+yo aspnetcore-
+
+
+npm config set proxy false
+npm config set https-proxy false
+
+Remove Completely
+---------------------------
+npm config set proxy null
+npm config set https-proxy null
+	or
+npm config rm proxy
+npm config rm https-proxy
+
+
+
+npm config set registry=http://registry.npmjs.org/
+npm config set strict-ssl false
+npm cache clean
+
+npm config set proxy https://username:password@proxy:port
+npm config set https-proxy https://username:password@proxy:port
+

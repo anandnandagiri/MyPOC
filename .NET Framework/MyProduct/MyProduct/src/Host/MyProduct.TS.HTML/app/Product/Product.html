@@ -1,0 +1,33 @@
+﻿<h3>{{pageTitle}}</h3>
+
+<br/>
+
+<div class="col-md-6">
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Product ID</td>
+                <td>Product Name</td>
+                <td>Unit Price</td>
+            </tr>
+        </thead>
+        <tr *ngFor='let product of products'>
+            <td>{{product.ProductID}}</td>
+            <td>{{product.ProductName}}</td>
+            <td>{{product.UnitPrice}}</td>
+            <td><button type="button" class="btn btn-primary">Edit</button></td>
+            <td><button type="button" class="btn btn-primary">Delete</button></td>
+        </tr>
+    </table>
+
+    <button type="button" class="btn btn-primary">Add Product</button>
+</div>
+
+<div class="col-md-6">
+    Implemented Promise with OneProduct {{oproduct.ProductName}}
+</div>
+<br /><br /><br />
+
+
+
+

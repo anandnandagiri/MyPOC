@@ -1,0 +1,169 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{F87FD339-5B6C-4505-9BCE-61B61F53E74E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{B04EA05A-D5AC-4490-94AE-F9273CBC7DDF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E4A4A90A-48CA-4FA6-A2AC-76B0B4F0C8F7}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{41900227-7029-4A32-8025-67EE5124D68B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Product.DataAccess.Repositories", "MyProduct\src\Test\Test.Product.DataAccess.Repositories\Test.Product.DataAccess.Repositories.csproj", "{E05E2667-F3F8-4AB1-80B0-8143378E51BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Console.Repositories", "MyProduct\src\Test\Test.Console.Repositories\Test.Console.Repositories.csproj", "{030193EF-4387-4E71-B5E0-0886DA55DDAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyProduct.Business.Services", "MyProduct\src\Libraries\MyProduct.Business.Services\MyProduct.Business.Services.csproj", "{E5C5C299-FF9B-4D53-BDB5-8AFB1D04AEA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyProduct.DataAccess", "MyProduct\src\Libraries\MyProduct.DataAccess\MyProduct.DataAccess.csproj", "{C2BF831E-38D4-4B5E-932B-5A38B9F12226}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyProduct.Domain.Entites", "MyProduct\src\Libraries\MyProduct.Domain.Entities\MyProduct.Domain.Entites.csproj", "{67DCD19D-7835-4F55-A246-8134F1CB220B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyProduct.Repositories", "MyProduct\src\Libraries\MyProduct.Repositories\MyProduct.Repositories.csproj", "{D0991FE1-D7CB-4223-BA65-7620F2DBCF6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyProduct.WebApi.Core", "MyProduct\src\Libraries\MyProduct.WebApi.Core\MyProduct.WebApi.Core.csproj", "{4E26F2D5-6F64-4F12-B68C-099C85C125CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyProduct.MicroService.WebAPI.SelfHost", "MyProduct\src\Host\MyProduct.MicroService.WebAPI.SelfHost\MyProduct.MicroService.WebAPI.SelfHost.csproj", "{39BFBE5D-0340-4894-8BB8-545ED1031D0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyProduct.WebMVC", "MyProduct\src\Host\MyProduct.WebMVC\MyProduct.WebMVC.csproj", "{4227182B-64C5-48B3-931B-9E427B89D0F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyProduct.Business.Contracts", "MyProduct\src\Libraries\MyProduct.Business.Contracts\MyProduct.Business.Contracts.csproj", "{1AF8BAA7-A04C-48E7-80C1-E6EE40B4FD21}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{68194FDB-7AAF-4D5C-8273-8FBA0C079A74}"
+	ProjectSection(SolutionItems) = preProject
+		Doc\Angular 2.txt = Doc\Angular 2.txt
+		Doc\MicroService Architecture.txt = Doc\MicroService Architecture.txt
+		Doc\MongoDB ReadMe.txt = Doc\MongoDB ReadMe.txt
+		Doc\NanoServer.txt = Doc\NanoServer.txt
+		Doc\NPM.txt = Doc\NPM.txt
+		Doc\ToDo.txt = Doc\ToDo.txt
+		Doc\TypeScript.txt = Doc\TypeScript.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyProduct.TS.HTML", "MyProduct\src\Host\MyProduct.TS.HTML\MyProduct.TS.HTML.csproj", "{F5912AA5-B17A-43CD-8B5A-05D029B82BBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E05E2667-F3F8-4AB1-80B0-8143378E51BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E05E2667-F3F8-4AB1-80B0-8143378E51BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E05E2667-F3F8-4AB1-80B0-8143378E51BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E05E2667-F3F8-4AB1-80B0-8143378E51BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{030193EF-4387-4E71-B5E0-0886DA55DDAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{030193EF-4387-4E71-B5E0-0886DA55DDAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{030193EF-4387-4E71-B5E0-0886DA55DDAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{030193EF-4387-4E71-B5E0-0886DA55DDAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5C5C299-FF9B-4D53-BDB5-8AFB1D04AEA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5C5C299-FF9B-4D53-BDB5-8AFB1D04AEA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5C5C299-FF9B-4D53-BDB5-8AFB1D04AEA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5C5C299-FF9B-4D53-BDB5-8AFB1D04AEA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2BF831E-38D4-4B5E-932B-5A38B9F12226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2BF831E-38D4-4B5E-932B-5A38B9F12226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2BF831E-38D4-4B5E-932B-5A38B9F12226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2BF831E-38D4-4B5E-932B-5A38B9F12226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67DCD19D-7835-4F55-A246-8134F1CB220B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67DCD19D-7835-4F55-A246-8134F1CB220B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67DCD19D-7835-4F55-A246-8134F1CB220B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67DCD19D-7835-4F55-A246-8134F1CB220B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0991FE1-D7CB-4223-BA65-7620F2DBCF6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0991FE1-D7CB-4223-BA65-7620F2DBCF6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0991FE1-D7CB-4223-BA65-7620F2DBCF6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0991FE1-D7CB-4223-BA65-7620F2DBCF6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E26F2D5-6F64-4F12-B68C-099C85C125CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E26F2D5-6F64-4F12-B68C-099C85C125CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E26F2D5-6F64-4F12-B68C-099C85C125CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E26F2D5-6F64-4F12-B68C-099C85C125CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39BFBE5D-0340-4894-8BB8-545ED1031D0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39BFBE5D-0340-4894-8BB8-545ED1031D0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39BFBE5D-0340-4894-8BB8-545ED1031D0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39BFBE5D-0340-4894-8BB8-545ED1031D0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4227182B-64C5-48B3-931B-9E427B89D0F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4227182B-64C5-48B3-931B-9E427B89D0F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4227182B-64C5-48B3-931B-9E427B89D0F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4227182B-64C5-48B3-931B-9E427B89D0F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AF8BAA7-A04C-48E7-80C1-E6EE40B4FD21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AF8BAA7-A04C-48E7-80C1-E6EE40B4FD21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AF8BAA7-A04C-48E7-80C1-E6EE40B4FD21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AF8BAA7-A04C-48E7-80C1-E6EE40B4FD21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5912AA5-B17A-43CD-8B5A-05D029B82BBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5912AA5-B17A-43CD-8B5A-05D029B82BBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5912AA5-B17A-43CD-8B5A-05D029B82BBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5912AA5-B17A-43CD-8B5A-05D029B82BBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E05E2667-F3F8-4AB1-80B0-8143378E51BB} = {41900227-7029-4A32-8025-67EE5124D68B}
+		{030193EF-4387-4E71-B5E0-0886DA55DDAA} = {41900227-7029-4A32-8025-67EE5124D68B}
+		{E5C5C299-FF9B-4D53-BDB5-8AFB1D04AEA3} = {B04EA05A-D5AC-4490-94AE-F9273CBC7DDF}
+		{C2BF831E-38D4-4B5E-932B-5A38B9F12226} = {B04EA05A-D5AC-4490-94AE-F9273CBC7DDF}
+		{67DCD19D-7835-4F55-A246-8134F1CB220B} = {B04EA05A-D5AC-4490-94AE-F9273CBC7DDF}
+		{D0991FE1-D7CB-4223-BA65-7620F2DBCF6A} = {B04EA05A-D5AC-4490-94AE-F9273CBC7DDF}
+		{4E26F2D5-6F64-4F12-B68C-099C85C125CA} = {B04EA05A-D5AC-4490-94AE-F9273CBC7DDF}
+		{39BFBE5D-0340-4894-8BB8-545ED1031D0B} = {F87FD339-5B6C-4505-9BCE-61B61F53E74E}
+		{4227182B-64C5-48B3-931B-9E427B89D0F3} = {F87FD339-5B6C-4505-9BCE-61B61F53E74E}
+		{1AF8BAA7-A04C-48E7-80C1-E6EE40B4FD21} = {B04EA05A-D5AC-4490-94AE-F9273CBC7DDF}
+		{F5912AA5-B17A-43CD-8B5A-05D029B82BBD} = {F87FD339-5B6C-4505-9BCE-61B61F53E74E}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 12
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs-rmysoft.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MyProduct\\src\\Test\\Test.Product.DataAccess.Repositories\\Test.Product.DataAccess.Repositories.csproj
+		SccProjectTopLevelParentUniqueName1 = MyProduct.sln
+		SccProjectName1 = MyProduct/src/Test/Test.Product.DataAccess.Repositories
+		SccLocalPath1 = MyProduct\\src\\Test\\Test.Product.DataAccess.Repositories
+		SccProjectUniqueName2 = MyProduct\\src\\Test\\Test.Console.Repositories\\Test.Console.Repositories.csproj
+		SccProjectTopLevelParentUniqueName2 = MyProduct.sln
+		SccProjectName2 = MyProduct/src/Test/Test.Console.Repositories
+		SccLocalPath2 = MyProduct\\src\\Test\\Test.Console.Repositories
+		SccProjectUniqueName3 = MyProduct\\src\\Libraries\\MyProduct.Business.Services\\MyProduct.Business.Services.csproj
+		SccProjectTopLevelParentUniqueName3 = MyProduct.sln
+		SccProjectName3 = MyProduct/src/Libraries/MyProduct.Business.Services
+		SccLocalPath3 = MyProduct\\src\\Libraries\\MyProduct.Business.Services
+		SccProjectUniqueName4 = MyProduct\\src\\Libraries\\MyProduct.DataAccess\\MyProduct.DataAccess.csproj
+		SccProjectTopLevelParentUniqueName4 = MyProduct.sln
+		SccProjectName4 = MyProduct/src/Libraries/MyProduct.DataAccess
+		SccLocalPath4 = MyProduct\\src\\Libraries\\MyProduct.DataAccess
+		SccProjectUniqueName5 = MyProduct\\src\\Libraries\\MyProduct.Domain.Entities\\MyProduct.Domain.Entites.csproj
+		SccProjectTopLevelParentUniqueName5 = MyProduct.sln
+		SccProjectName5 = MyProduct/src/Libraries/MyProduct.Domain.Entities
+		SccLocalPath5 = MyProduct\\src\\Libraries\\MyProduct.Domain.Entities
+		SccProjectUniqueName6 = MyProduct\\src\\Libraries\\MyProduct.Repositories\\MyProduct.Repositories.csproj
+		SccProjectTopLevelParentUniqueName6 = MyProduct.sln
+		SccProjectName6 = MyProduct/src/Libraries/MyProduct.Repositories
+		SccLocalPath6 = MyProduct\\src\\Libraries\\MyProduct.Repositories
+		SccProjectUniqueName7 = MyProduct\\src\\Libraries\\MyProduct.WebApi.Core\\MyProduct.WebApi.Core.csproj
+		SccProjectTopLevelParentUniqueName7 = MyProduct.sln
+		SccProjectName7 = MyProduct/src/Libraries/MyProduct.WebApi.Core
+		SccLocalPath7 = MyProduct\\src\\Libraries\\MyProduct.WebApi.Core
+		SccProjectUniqueName8 = MyProduct\\src\\Host\\MyProduct.MicroService.WebAPI.SelfHost\\MyProduct.MicroService.WebAPI.SelfHost.csproj
+		SccProjectTopLevelParentUniqueName8 = MyProduct.sln
+		SccProjectName8 = MyProduct/src/Host/MyProduct.MicroService.WebAPI.SelfHost
+		SccLocalPath8 = MyProduct\\src\\Host\\MyProduct.MicroService.WebAPI.SelfHost
+		SccProjectUniqueName9 = MyProduct\\src\\Host\\MyProduct.WebMVC\\MyProduct.WebMVC.csproj
+		SccProjectTopLevelParentUniqueName9 = MyProduct.sln
+		SccProjectName9 = MyProduct/src/Host/MyProduct.WebMVC
+		SccLocalPath9 = MyProduct\\src\\Host\\MyProduct.WebMVC
+		SccProjectUniqueName10 = MyProduct\\src\\Libraries\\MyProduct.Business.Contracts\\MyProduct.Business.Contracts.csproj
+		SccProjectTopLevelParentUniqueName10 = MyProduct.sln
+		SccProjectName10 = MyProduct/src/Libraries/MyProduct.Business.Contracts
+		SccLocalPath10 = MyProduct\\src\\Libraries\\MyProduct.Business.Contracts
+		SccProjectUniqueName11 = MyProduct\\src\\Host\\MyProduct.TS.HTML\\MyProduct.TS.HTML.csproj
+		SccProjectTopLevelParentUniqueName11 = MyProduct.sln
+		SccProjectName11 = MyProduct/src/Host/MyProduct.TS.HTML
+		SccLocalPath11 = MyProduct\\src\\Host\\MyProduct.TS.HTML
+	EndGlobalSection
+EndGlobal

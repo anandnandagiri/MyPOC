@@ -1,0 +1,73 @@
+Implement Repository
+Implement Business Service & Contracts
+Implement Exception Handling
+Implement Security
+Implement Audit/Log
+Implement Customized Token with Claims	
+
+Implement Loosely Coupled Layer Using .NET Reflection like IJOBS
+	
+AngularJS 2.2
+	
+	(Done)Implement ngIF,ngFor
+	(Done)Implement Routing Concept
+	(Done)Implement Enviroment Mode
+	Implement toPromise()
+	Implement Route With Parameters
+	Implement Output/Input related
+	Implement Service dependency Injection	
+	Implement GLUP	
+	Implement Google Map Navigation
+
+	Implement Unit Testing
+
+	(Done)Implement ApiResponse for Product Service
+		return this.http
+            .get(this.productURL + 'GetProducts')
+            .map((response: Response) => <Product[]>response.json().data)
+            .do(data => console.log('All ' + JSON.stringify(data)));
+
+
+Web API Self Host
+	
+	(Done)Add Customer Header to Response
+
+
+Data Access Layer
+	
+	Implement Store Procedure Exection Method in DAL Repositories 
+	Handle Exception while Adding Product in Repository Pattern
+	
+
+Evalute
+
+	MEAN STACK (M MongoDB E Express.js A AngularJS N NodeJS)
+	AngularJS 2.2
+	TypeScript
+	GitHUB
+	shim.js
+	zone.js
+	reflect.js
+	polyfill
+	gulp
+
+
+Technologies/Languages
+
+	AngularJS 2.2
+	TypeScript
+	NodeJS
+	Express.JS
+	MongoBD
+	GitHUB
+	.NET Core
+	
+	Docker
+	
+	Nano Server
+	
+
+Architecture
+		
+	MVC
+	MicroServices

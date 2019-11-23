@@ -1,0 +1,25 @@
+GET
+
+	http://localhost:9000/api/Product/GetProducts
+	
+	User-Agent: Fiddler
+	Host: localhost:9000
+
+	
+	
+POST
+
+	http://localhost:9000/api/Product/AddProduct
+
+	User-Agent: Fiddler
+	Host: localhost:9000
+	Content-Type: application/json
+	Content-Length: 84
+	
+	{"ProductID":2,"ProductName":"TEST1","UnitPrice":10.0,"CategoryID":1,"SupplierID":1}
+	
+	
+
+	
+
+	

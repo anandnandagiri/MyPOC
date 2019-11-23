@@ -1,0 +1,34 @@
+﻿<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+    var myCenter = new google.maps.LatLng(17.514896, 78.306200);
+    function initialize() {
+        var mapProp = {center: myCenter,zoom: 12,mapTypeId: google.maps.MapTypeId.ROADMAP};
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        var marker = new google.maps.Marker({position: myCenter});
+        marker.setMap(map);
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<div class="row">
+    <div class="col-md-4">
+        <h3>{{pageTitle}}</h3>
+        <address>
+            G2, SAPTHAGIRI RESIDENCY<br />
+            NEW SAI BHAGAVAN COLONY ROAD NO 1<br />
+            BEERAMGUDA (BHEL POST)<br />
+            TELANGANA<br />
+            PIN: 502032<br />
+            <abbr title="Phone">Mobile: 9247228818</abbr>
+        </address>
+
+        <h3>Email Us</h3>
+        <address>
+            <strong>Support:</strong>   <a href="mailto:Support@Rmysoft.com">Support@RmySoft.com</a><br />
+            <strong>Sales/Info:</strong> <a href="mailto:Contact@Rmysoft.com">Contact@RmySoft.com</a>
+        </address>
+    </div>
+    <div class="col-md-2">
+        <h3>Map Location</h3>
+        <div id="googleMap" style="width:380px;height:360px;"></div>
+    </div>
+</div>

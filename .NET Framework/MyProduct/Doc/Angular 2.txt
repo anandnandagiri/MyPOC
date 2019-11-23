@@ -1,0 +1,20 @@
+Install node js and npm
+Create an application project folder
+Add a tsconfig.json to guide the TypeScript compiler
+Add a typings.json that identifies missing TypeScript definition files
+Add a package.json file that defines the packages and scripts we need
+Install the npm packages and typings files
+
+
+Java Script Language Specification ES (ECMA Script)
+
+Angular 2
+	
+	Concepts
+		Services
+		Components	= Template + Class(Properties, Methods) + MetaData
+		HTTP
+		Events
+		Data Binding
+	
+	

@@ -1,0 +1,12 @@
+
+
+Install TypScript using NPM
+	npm install -g typescript(For the latest stable version)
+	npm install -g typescript@next(For our nightly builds)
+
+
+TypeScript Command
+	tsc -v(Show version)
+	tsc <<file.ts>>(compile code)
+
+
