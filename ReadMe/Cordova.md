@@ -37,6 +37,12 @@ cordova run -- --live-reload
 cordova plugin add cordova-plugin-camera --save
 cordova plugin remove  cordova-plugin-camera
 ```
+Cordova Android Command
+```
+cordova requirements android   
+cordova build android --verbose
+cordova run android
+```
 \
 APK File Generated Location
 ```
