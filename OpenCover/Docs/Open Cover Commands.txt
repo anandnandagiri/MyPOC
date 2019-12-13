@@ -1,0 +1,77 @@
+net start w3svc
+net stop w3svc /y
+
+
+multiple
+-----------------------------------
+
+del /f /q C:\MyFolder\Demo\zfunctionalCoverageReport\*.*
+
+cd C:\OpenCover\opencover.4.7.922
+OpenCover.Console.exe -target:"C:\Program Files\IIS Express\iisexpress.exe" -targetargs:"-config:C:\MyFolder\Demo\applicationhost_aspx.config" -filter:+[*]* -register:user "-searchdirs:C:\MyFolder\Demo\aspx\bin;C:\MyFolder\Demo\mvc\bin"
+
+
+Both ASPX & MvcApplication
+------------------------------
+del /f /q C:\MyFolder\Demo\zfunctionalCoverageReport\*.*
+cd C:\OpenCover\ReportGenerator_4.2.2\net47
+ReportGenerator.exe -reports:"C:\OpenCover\opencover.4.7.922\results.xml" -targetdir:C:\MyFolder\Demo\zfunctionalCoverageReport "-sourcedirs:C:\MyFolder\Demo\aspx\bin;C:\MyFolder\Demo\mvc\bin" "-assemblyfilters:-Antlr3.Runtime*;-System.Web.UI.dll*" "-classfilters:-__ASP.FastObjectFactory*;-*.BundleConfig;-*.FilterConfig;-*.RouteConfig;-*.MvcApplication;-ASP._Page_Views__ViewStart_cshtml"
+
+
+
+Only ASPX
+-------------------
+del /f /q C:\MyFolder\Demo\zfunctionalCoverageReport\*.*
+cd C:\OpenCover\ReportGenerator_4.2.2\net47
+ReportGenerator.exe -reports:"C:\OpenCover\opencover.4.7.922\results.xml" -targetdir:C:\MyFolder\Demo\zfunctionalCoverageReport "-sourcedirs:C:\MyFolder\Demo\aspx\bin;C:\MyFolder\Demo\mvc\bin" "-assemblyfilters:-Antlr3.Runtime*;-System.Web.UI.dll*" "-classfilters:-__ASP.FastObjectFactory*;-*.BundleConfig;-*.FilterConfig;-*.RouteConfig;-*.MvcApplication;-ASP._Page_Views__ViewStart_cshtml" "-filefilters:-C:\MyFolder\TFS\rmy\POC\OpenCover\mvc\*"
+
+
+
+
+cd C:\OpenCover\opencover.4.7.922
+OpenCover.Console.exe -target:"C:\Program Files\IIS Express\iisexpress.exe" -targetargs:"-config:C:\MyFolder\Demo\applicationhost_aspx.config" -filter:+[*]* -register:user -targetdir:C:\MyFolder\Demo\aspx\bin
+
+cd C:\OpenCover\ReportGenerator_4.2.2\net47
+ReportGenerator.exe -reports:"C:\OpenCover\opencover.4.7.922\results.xml" -targetdir:C:\MyFolder\Demo\zfunctionalCoverageReport -sourcedir:C:\MyFolder\Demo\aspx\bin
+
+
+cd C:\OpenCover\opencover.4.7.922
+OpenCover.Console.exe -target:"C:\Program Files\IIS Express\iisexpress.exe" -targetargs:"-config:C:\MyFolder\Demo\applicationhost_aspx.config" -filter:+[*]* -register:user -targetdir:"C:\MyFolder\Demo\aspx\bin";"C:\MyFolder\Demo\mvc\bin"
+
+cd C:\OpenCover\ReportGenerator_4.2.2\net47
+ReportGenerator.exe -reports:"C:\OpenCover\opencover.4.7.922\results.xml" -targetdir:C:\MyFolder\Demo\zfunctionalCoverageReport -sourcedir:C:\MyFolder\Demo\aspx\bin
+
+cd C:\OpenCover\opencover.4.7.922
+OpenCover.Console.exe -target:"C:\MyFolder\Demo\ConsoleApp\ConsoleApp1.exe" -register:user
+
+cd C:\OpenCover\ReportGenerator_4.2.2\net47
+ReportGenerator.exe -reports:"C:\OpenCover\opencover.4.7.922\results.xml" -targetdir:C:\MyFolder\Demo\zfunctionalCoverageReport -sourcedir:C:\MyFolder\Demo\ConsoleApp\
+
+
+
+
+
+
+del /f /q C:\MyFolder\Demo\zfunctionalCoverageReport\*.*
+cd C:\OpenCover\ReportGenerator_4.2.2\net47
+ReportGenerator.exe -reports:"C:\OpenCover\opencover.4.7.922\results.xml" -targetdir:C:\MyFolder\Demo\zfunctionalCoverageReport "-sourcedirs:C:\MyFolder\Demo\aspx\bin;C:\MyFolder\Demo\mvc\bin" "-assemblyfilters:-Antlr3.Runtime*;-System.Web.UI.dll*"
+
+
+
+
+
+del /f /q C:\MyFolder\Demo\zfunctionalCoverageReport\*.*
+cd C:\OpenCover\ReportGenerator_4.2.2\net47
+ReportGenerator.exe -reports:"C:\OpenCover\opencover.4.7.922\results.xml" -targetdir:C:\MyFolder\Demo\zfunctionalCoverageReport "-sourcedirs:C:\MyFolder\Demo\aspx\bin;C:\MyFolder\Demo\mvc\bin" "-assemblyfilters:-Antlr3.Runtime*;-System.Web.UI.dll*" "-classfilters:-__ASP.FastObjectFactory*;-*.BundleConfig;-*.FilterConfig;-*.RouteConfig;-*.MvcApplication;-ASP._Page_Views__ViewStart_cshtml"
+
+
+
+
+
+cd C:\OpenCover\ReportGenerator_4.2.2\net47
+ReportGenerator.exe -reports:"C:\OpenCover\opencover.4.7.922\results.xml" -targetdir:C:\MyFolder\Demo\zfunctionalCoverageReport "-sourcedir:C:\MyFolder\Demo\aspx\bin;C:\MyFolder\Demo\mvc\bin" "-assemblyfilters:-Antlr3.Runtime*;-System.Web.UI.dll*"
+
+
+
+
+

@@ -1,0 +1,15 @@
+pipeline {
+  agent any
+  stages {
+    stage('Build') {
+      steps {
+        bat 'msbuild .\\ASPXSample\\OpenCover.sln'
+      }
+    }
+    stage('Deploy') {
+      steps {
+        bat 'git ftp push ftp://52.163.114.57/aspx/'
+      }
+    }
+  }
+}
