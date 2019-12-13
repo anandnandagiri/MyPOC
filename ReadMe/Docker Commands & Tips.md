@@ -55,13 +55,17 @@ docker load -i <FileName>.tar
 
 
 ### Docker Tips
-
+Docker Connect To Running container
+```
+docker exec -it <container name or ID> cmd 		/* For Windows Image*/
+docker exec -it <container name or ID> /bin/bash	/* For ubuntu Image*/
+docker exec -it <container name or ID> sh		/* For alpine Image*/
+```
 Docker Run In Interaction mode and once exit remove container
 ```
 docker run -it --rm <Image> cmd
 docker run -it --rm <Image> sh
 ```
-
 Docker stop all container and remove
 ```
 docker stop $(docker ps -aq)
@@ -72,13 +76,7 @@ Docker Remove All Images which are not running
 docker image prune --all
 docker rmi $(docker images --filter "dangling=true" -q --no-trunc)
 ```
-Docker Connect To Running container
-```
-docker exec -it <container name or ID> cmd
-docker exec -it <container name or ID> /bin/bash
-docker exec -it <container name or ID> sh
-```
 Docker Copy From File From Image
 ```
-docker cp <Image Name>:<Source File>  <Destination File>
+docker cp <container name or ID>:<Source File>  <Destination File>
 ```
