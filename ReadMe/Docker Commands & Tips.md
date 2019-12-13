@@ -19,9 +19,9 @@ docker login -u oauth2accesstoken -p $gaut https://gcr.io
 Docker Run Commands With detach/Interaction/Port/Volume Mount	
 ```
 docker run <image>
-docker run --name=<custom name> <image>
+docker run --name=<container name> <image>
 docker run -d <image>
-docker run -d -p 4000:4000 <image>
+docker run -d -p <host port>:<container port> <image>
 docker run -it <image>
 docker run -it -v <path of host>:<path of container> <image>
 ```
@@ -29,7 +29,7 @@ docker run -it -v <path of host>:<path of container> <image>
 Docker Inspect
 ```	
 docker Inspect <ContainerID or Name>
-docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' cc
+docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <ContainerID or Name>
 docker logs <Images ID>
 ```
 	
