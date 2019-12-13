@@ -1,0 +1,1 @@
+chrome://net-internals/#dns
