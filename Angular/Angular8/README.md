@@ -1,4 +1,3 @@
-#### VAapps 
 # MyVault
 
 This Project was Built On
