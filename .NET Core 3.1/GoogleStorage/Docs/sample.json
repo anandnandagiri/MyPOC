@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "disco",
+  "private_key_id": "18955f7057ef18b28dc0e3b56e001c43e01ad",
+  "private_key": "-----BEGIN PRIVATE KEY-----\plNqyXDcSayqgAw5aiULrN0C2P4r1u2pcThcdULM8bjF\n+SPNxIQGJoezZ7Tq+j+SdTOFh+y0fNC/ffSt5x3Y7DOght+n5q1mCfQMqjYYTenf\nf8G3HghrAgMBAAECggEAGs0USO10TKu1Tra6mYzT94RYOyRpADPdi/uR7V+qQYO6\ndVsaacVK4CJCyqh17jwvuiww4e9pe0K+ia0QoAUn74sNoc8Au2zxLmNzzJBYKxiY\n9uR2jOCaRVmVcIt0jvSSQBrKA3t0Nvq3jJXJM6aHAtFIFNBTCuRXq7qjoHe8fHuP\negW3oSSaeZBVueNdt5MkI283xvhDLIDmsbSkrlw3MHYPrsgf8qYw5JJrL8KZ0aj/\nNGwF+/zrzy68RrfeCL/C6x4U1zjF8kkWl5u4+CCcIjv8o9Ptc5t2La0G5hedaqX4\nQdtrnMsyHxfemc0SzKRaqvcORumRf4zhcF3VfUjD+QKBgQDtS8ytP5iQ4hJZfUjD\nKDQh+ajYDXJWXkDwls8S+fKU8/VDu3+7Fc4e3F3iZLH6aOn2rwF+BRqBaGr6lIus\n1gl7vpxMUNqNk3oMAfYFOYAHszC/sV1yRME2EG2DS3lZQzKMKMpTz/BazjmkNERe\nCorfru0z5YbDTiGSyd59chGjmQKBgQDDHQpm7lfaLEZP+j6hBue94KFDhV6LvBsK\nSkUlpPzQgNLJtBBZ02FkB8GmN5ZfjyzHZkIEzN2Hi2D3ysonjVj6v696ton18uyE\nWepRQms8dFiBc94pg7dKxUo30UFV4+01NmEICYl37Cj/YXqADuTlZBY838hg25HA\nDhja7MSOowKBgDVxZN9/+zRmNgvBk6mgXF1qhQRjwuSAxc9pp6l2cZPqfcqLZ/ES\nsCFzMBHU6+Ch0E+miod/TsDma3GUEwESE4CzJTBq5U4NcOdTab0zfgo96TTDFXCu\n23T5rjBrxyC7aZ73cNn/cvqAh6rbuqoTZcOK+hE+GGPULOuKW3mVPzPBAoGAPuIj\nMh1rDxPp7WjXuopBMj8teleHqz2K8XwSYRmVqZV7WirAglLQNq8RSILt4gqBAhsA\n+A8W7tKLBBHFqY2yuc4BvmkKecw7UkSwclQXv7o3tDElzvd2oZCIZQj6J7Z4Awht\nqWt5dL8WT4iZNKCYQR5K1H/DUwQxK1bfx987UkUCgYEArfGxV7hoRyUg4wMX7Ror\ngdp+uUs/7Ao7q3EkqJM9JxgRXbuDekpQvzxPHSoJSwcNKrorMBERoCI9OP639wQm\nVscx8x01Xccd+p4z82vpXsAcxoTJNqsbsvbFBw5Zi6LN2rc6nyDZcQFwayIpBJcs\nTSZxMiOT6gGRRHTgrocmXeU=\n-----END PRIVATE KEY-----\n",
+  "client_email": "torageadmin@disco.iam.gserviceaccount.com",
+  "client_id": "106583305534161267",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/vastorageadmin%40dis.iam.gserviceaccount.com"
+}

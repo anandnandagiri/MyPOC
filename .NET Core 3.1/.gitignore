@@ -38,5 +38,3 @@ msbuild.wrn
 
 # Angular
 node_modules/
-/.NET Core 3.1/GoogleOAuth
-/.NET Core 3.1/GoogleStorage/GoogleStorage/disco-bedrock-238412-18955f7057ef.json
