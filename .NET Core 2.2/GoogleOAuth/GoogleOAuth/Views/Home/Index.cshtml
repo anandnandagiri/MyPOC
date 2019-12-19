@@ -1,0 +1,26 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using GoogleOAuth.Common
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <img src="https://cloud.google.com/_static/d1cb92b14e/images/cloud/cloud-logo.svg" style="width:auto;height:20px;" alt="Google Cloud">
+    <h1 class="display-4">Welcome</h1>
+    <p>
+        @if (SignInManager.IsSignedIn(User))
+        {
+            <a> @User.Identity.Name! </a>
+        }
+    </p>
+    <p>Learn GCP With @CommonConstants.SITE_NAME</p>
+    @*<p> <a href="@Url.Action("GoogleExam")">Google Certifications Material</a>.</p>
+        <p> <a href="~/SecureFolder/GCP Exam Results Udemy Set 4.pdf">Udemy Set 4</a>.</p>
+        <p> <a href="~/SecureFolder/GoogleOAuth.db">My DB</a>.</p>
+        <p> <a href="~/SecureFolder/ReadMe.txt">ReadMe</a>.</p>*@
+</div>
+
+

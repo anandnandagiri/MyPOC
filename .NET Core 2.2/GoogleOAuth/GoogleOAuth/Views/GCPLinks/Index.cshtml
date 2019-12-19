@@ -1,0 +1,106 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h5>Recommanded Links</h5>
+<br />
+<div id="accordion">
+    <div class="card">
+        <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#GCS">
+                Google Case Studies
+            </a>
+        </div>
+        <div id="GCS" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+                <A HREF="https://ninite.com">Ninite App To Install All Dev Tools</A>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#GDL">
+                Google Docs Links
+            </a>
+        </div>
+        <div id="GDL" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+                <A HREF="https://ninite.com">Ninite App To Install All Dev Tools</A>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#OC">
+                Online Course
+            </a>
+        </div>
+        <div id="OC" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+                <A HREF="https://ninite.com">Ninite App To Install All Dev Tools</A>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#QwikLabs">
+                QwikLabs
+            </a>
+        </div>
+        <div id="QwikLabs" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+                <A HREF="https://ninite.com">Ninite App To Install All Dev Tools</A>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#yp">
+                Youtube PlayList
+            </a>
+        </div>
+        <div id="yp" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+                <A HREF="https://ninite.com">Ninite App To Install All Dev Tools</A>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#ghs">
+                GitHub Samples
+            </a>
+        </div>
+        <div id="ghs" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+                <a href="https://github.com/GoogleCloudPlatform/python-docs-samples">Python</a>
+                <br /><A HREF="https://github.com/GoogleCloudPlatform/java-docs-samples">Java Samples</A>
+                <br /><A HREF="https://github.com/GoogleCloudPlatform/dotnet-docs-samples">.NET Docs Samples</A>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type='text/javascript'>
+    $(document).ready(function () {
+        $('.card a').mousedown(function (event) {
+            switch (event.which) {
+                case 1:
+                    //alert('Left mouse button pressed');
+                    $(this).attr('target', '_blank');
+                    break;
+                case 2:
+                    //alert('Middle mouse button pressed');
+                    $(this).attr('target', '_blank');
+                    break;
+                case 3:
+                    //alert('Right mouse button pressed');
+                    $(this).attr('target', '_blank');
+                    break;
+                default:
+                    //alert('You have a strange mouse');
+                    $(this).attr('target', '_self"');
+            }
+        });
+    });</script>

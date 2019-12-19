@@ -1,0 +1,18 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Log in";
+}
+
+
+<br />
+Please login with google account to get access to docs
+<br />
+<form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+    <button type="submit" class="btn btn-primary" name="provider" value="Google" title="Log in using your Google account">Google</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

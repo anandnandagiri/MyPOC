@@ -1,0 +1,26 @@
+﻿
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <br />
+        <p> <a href="@Url.Action("GoogleExam")">Google Certifications Material</a></p>
+        <p> <a href="~/SecureFolder/GoogleOAuth.db">GoogleOAuth DB</a></p>
+        <p> <a href="~/SecureFolder/ReadMe.txt">ReadMe</a></p>
+    }
+    else
+    {
+        <br />
+        <p>Please login with google account to get access to docs</p>
+        <form id="external-account" asp-area="Identity" asp-page="/Account/ExternalLogin" asp - route - returnUrl="" method="post" class="form-horizontal">
+            <button type="submit" class="btn btn-primary" name="provider" value="Google" title="Log in using your Google account">Google</button>
+        </form>
+    }
+</div>
