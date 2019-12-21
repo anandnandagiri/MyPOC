@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "disco-bedrock-238412",
+  "private_key_id": "89742935d87cc8ff38b85a0e67ba82e4efe5bf8f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC3EFJ16BmEAFcu\nA7EJBU8Q6z7a5j1ylKIRnmIu1RqCLwxvfLVcEhUr+jxwaJ2nqwIyBK7WHhhIDVOf\nay+0tapmTDRWXjnTXHpDrtmB90TQAyYbJYO5VxWCCAyHHAUAQNwqExN1dg3ctWVx\n4T2nWw2DwcW+J92djQThLKPQfgISIIjVPo2Ug1Qmacgq0HbEnQK+W1CK5su0+4UO\n+mrwIcCkg7a99yk/nlUgwzQ9CgTtNfte4y2/VXP3xR1I9uEwWiUh61LilWgjsoJC\nCZW2Lwzzsw+ay437lmojf7pMZpcqPi0lOSt+6S23w3zRvlV37CtpB6y7Pb17L9mn\n09vDJ5hzAgMBAAECggEAFBjGn2Bg7LeHhUBX1GsGHbq1pnJVl0PvRt/hsiJ9oS0T\nwGmAaiB8vTHg0LZWGGy9oPVtUYmcQMy1vBqYR3kUwTDnI1QqJPn8sibP2g9l49rJ\n+Xuff7P/uHa0aWC6Fn0IWSt0R2uJD2HFRpXjntZwIAwgbppnHz9hTxcHeiwF2Ndp\nzTEWOIabV5sTbNBep5IJ9Nw/RsDpSWrnwwrYZMxn4w9DW1vcNpFgNR8OHYaudaY1\nfz1QQVRiaYThUcHIXH7DeiDloAapfd6obdmVbiAtMhx8SXOKFprKffeDQ4Vc3Ofe\nPHFlITG3UXO9NfLKeRr32o2HP6d0l6oWAhW62uzdAQKBgQDsMVzAaZ0rubYBoRr8\nn0xAd97AQqD0WjRl3ABijIAMw48aHJv5i2L8JDNk9RfdO4FCmZ7ZplP8ZOhFOz7i\nLxoZx2JKQjJwfLmbm+5NZLqxbOGh+yDgZ5xN96dBiA8zOyz/NQeu+Xju/+Cjo1fN\nebRn7WxLwGmgqYOgrv94UeO8eQKBgQDGal+v+wAEz7lEEyhCc0lNs2I6Zj/0+IR4\ndtJX6mMySOKLjXVLg4vy2Uptq8i8++4D6lyjFyH5c3sbL5PE/xlVDDG/iDplv1o3\n/qha1MQJp35dqVnmVoHyTMtVdOZ2o/CFpgGbvb8Thxnt5qrVYCKqPJn8gHkPwZbc\ngBkBHkApSwKBgCbeZLYha0UD1cjk200RZfoB//1Bub0cjxzoHIQbPQNct1MDvENP\nxeVai76ket3kafwszbBhp9aUQIkMG+ga+j+dyTYROL28OMs72PaRiguisGr4qctk\nIZvPEo49NssmhNwmvPH1igpCv5QOUGe3DJJBxx2cN4XB/7BUvCPvzft5AoGAMoqq\nMTOov5ECSlru6G5hf89v+BxPsmETrXPnBMoJ1qdGPfIcrM2neobrNKCLk8hAyvKK\nAmlEGDzYYQZvh8DLfSSMD5Pt/DkQDC9sRybngOYPhGA9LDVhCI2TRgNvKU19WS3+\nPuPIpnrFmhol7hB9BAxH1VAMhnzzpttigyxnf50CgYEAynlwQ5CLJzpyNG6dzp+n\n8XzIQFajgnWcYr78sd8QEOMTKHv0M6x6FcU5Orf4ogdLo0FxVLkCNi/WS2wPvcRK\nDbwxanLAy2pwefDkirixtGIlF2GzQ6OuiuG4JNC/Qt5mo1R+qmj1UABHyLMbwYLV\nA61IHYNC7XxP8V+GlbZjfL8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "vaappsstorageserviceaccount@disco-bedrock-238412.iam.gserviceaccount.com",
+  "client_id": "117751297050194920241",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/vaappsstorageserviceaccount%40disco-bedrock-238412.iam.gserviceaccount.com"
+}
