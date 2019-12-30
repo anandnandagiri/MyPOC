@@ -52,7 +52,12 @@ docker Commit <Container Name Or ID> <new image>
 docker save -o <FileName>.tar <Image>
 docker load -i <FileName>.tar
 ```
-
+Docker Custom Network Bridge (ping by hostname)
+```
+docker network create --driver=bridge <custom network bridge name>
+docker network rm  <custom network bridge name or network ID>
+docker network ls
+```
 
 ### Docker Tips
 Docker Connect To Running container
@@ -70,6 +75,8 @@ Docker stop all container and remove
 ```
 docker stop $(docker ps -aq)
 docker rm $(docker ps -aq)
+(or)
+docker rm -f $(docker ps -aq)
 ```
 Docker Remove All Images which are not running
 ```
