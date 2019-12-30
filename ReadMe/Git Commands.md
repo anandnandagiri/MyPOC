@@ -19,6 +19,11 @@ git add .
 git add -u
 ```
 
+Undo Files
+```
+git checkout -- <file>
+```
+
 Commit Locally
 ```
 git commit -m "Initial Check IN"
