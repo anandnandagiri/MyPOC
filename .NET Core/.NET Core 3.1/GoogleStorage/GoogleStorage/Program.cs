@@ -33,20 +33,23 @@ namespace GoogleStorage
                     Console.WriteLine(bucket.Name);
                     string storageobjpath = bucketpath;
                     foreach (var storageObject in storage.ListObjects(bucket.Name, ""))
-                    {     
-                        string file = Path.GetFileName(storageObject.Name);                                     
+                    {
+                        //Console.WriteLine("StorageObject {0}", storageObject);
+                        //GenerateSignedUrl(bucket.Name, storageObject.Name);
+
+                        string file = Path.GetFileName(storageObject.Name);
                         if (!string.IsNullOrEmpty(file))
                         {
 
-                            string fileName = bucketpath + @"\" + storageObject.Name.Replace('/','\\');
+                            string fileName = bucketpath + @"\" + storageObject.Name.Replace('/', '\\');
                             string dirName = Path.GetDirectoryName(fileName);
                             Directory.CreateDirectory(dirName);
                             Console.WriteLine($"{fileName}");
                             using (var outputFile = File.OpenWrite(fileName))
                             {
                                 storage.DownloadObject(bucket.Name, storageObject.Name, outputFile);
-                            }           
-                           //Console.WriteLine($"{Path.GetFileName(storageObject.Name)}  -> {dirName}");
+                            }
+                            //Console.WriteLine($"{Path.GetFileName(storageObject.Name)}  -> {dirName}");
                         }
                         else
                         {
@@ -57,7 +60,7 @@ namespace GoogleStorage
                     Console.WriteLine("");
                 }
             }
-
+            Console.WriteLine("Press Any Key To Exit....");
             Console.ReadKey();
         }
 
@@ -69,6 +72,13 @@ namespace GoogleStorage
                 storage.DownloadObject(bucketName, objectName, outputFile);
             }
             Console.WriteLine($"downloaded {objectName} to {localPath}.");
+        }
+
+        private static void GenerateSignedUrl(string bucketName, string objectName)
+        {
+            UrlSigner urlSigner = UrlSigner.FromServiceAccountPath(Environment.GetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS"));
+            string url = urlSigner.Sign(bucketName, objectName, TimeSpan.FromHours(1), null);
+            Console.WriteLine(url);
         }
     }
 }
