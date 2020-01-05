@@ -54,6 +54,14 @@ git credential-manager install
 
 git remote rm <given remote name>
 ```
+## Troubleshoot
+
+remote: Repository not found.
+```
+git remote rm origin
+git remote add origin  https://USERNAME:PASSWORD@github.com/username/reponame.git
+```
+
 
  \
 Add Git Ignore File(On Windows OS)
