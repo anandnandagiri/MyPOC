@@ -34,3 +34,9 @@ npm install --save ng-showdown
 npm install --save @ng-bootstrap/ng-bootstrap
 npm install bootstrap@4.3.1
 ```
+#### Angular Cli WebLinks
+
+https://angular.io/guide/releases \
+https://www.npmjs.com/package/@angular/cli \
+https://github.com/angular/angular-cli
+
