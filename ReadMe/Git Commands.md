@@ -61,7 +61,8 @@ remote: Repository not found.
 git remote rm origin
 git remote add origin  https://USERNAME:PASSWORD@github.com/username/reponame.git
 ```
-
+Above didn't Solved
+Goto Control Panel\All Control Panel Items\Credential Manager clear all the credential stored
 
  \
 Add Git Ignore File(On Windows OS)
