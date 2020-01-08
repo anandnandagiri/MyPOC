@@ -69,7 +69,7 @@ To set remote all branches
 git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
 ```
 
-To set remote default to branches
+To set remote default to master branch
 ```
 git config remote.origin.fetch  "+refs/heads/master:refs/remotes/origin/master"
 ```
