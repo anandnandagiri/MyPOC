@@ -64,6 +64,16 @@ git remote add origin  https://USERNAME:PASSWORD@github.com/username/reponame.gi
 Above didn't Solved
 Goto Control Panel\All Control Panel Items\Credential Manager clear all the credential stored
 
+To set remote all branches
+```
+git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
+```
+
+To set remote default to branches
+```
+git config remote.origin.fetch  "+refs/heads/master:refs/remotes/origin/master"
+```
+
  \
 Add Git Ignore File(On Windows OS)
    * Create file ignore.txt
