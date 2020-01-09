@@ -11,6 +11,10 @@ git -help
 git clone -help
 ```
 
+Get Git Config
+```
+git config --list --show-origin
+```
 
 Add All Files for check-in
 ```
@@ -72,6 +76,10 @@ git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
 To set remote default to master branch
 ```
 git config remote.origin.fetch  "+refs/heads/master:refs/remotes/origin/master"
+```
+To Check set remote default
+```
+git config --get remote.origin.fetch
 ```
 
  \
