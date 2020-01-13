@@ -1,3 +1,12 @@
+#### Default SQL Instances
+```
+(localdb)\MSSQLLocalDB
+.\SQLEXPRESS
+localhost\SQLEXPRESS
+.\MSSQLSERVER
+localhost\MSSQLSERVER
+```
+
 #### Dynamic Scripts Generate for Select top 1, Drop, Delete in a Table
 ```
 select 'SELECT top 1 * from ' + name from sys.tables order by name
