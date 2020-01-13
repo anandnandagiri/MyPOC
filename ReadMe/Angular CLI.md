@@ -3,6 +3,11 @@ Angular CLI Command
 npm install -g @angular/cli@latest 
 ng version
 ```
+Angular CLI Specific Version
+```
+npm install -g @angular/cli@8.3.21
+```
+
 Create New Project
 ```
 ng new <ProjectName>
@@ -34,3 +39,10 @@ npm install --save ng-showdown
 npm install --save @ng-bootstrap/ng-bootstrap
 npm install bootstrap@4.3.1
 ```
+#### Angular Cli WebLinks
+
+https://angular.io/guide/releases \
+https://www.npmjs.com/package/@angular/cli \
+https://github.com/angular/angular-cli
+https://github.com/angular/angular-cli/releases
+
