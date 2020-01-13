@@ -10,8 +10,8 @@ namespace GoogleStorage
         static void Main(string[] args)
         {
             string exepath = Path.GetDirectoryName(new Uri(Assembly.GetExecutingAssembly().CodeBase).LocalPath);
-            string jsonpath = Path.Combine(exepath, "disco-bedrock-238412-18955f7057ef.json");
-            string projectID = "disco-bedrock-238412";
+            string jsonpath = Path.Combine(exepath, "appConfig.json");
+            string projectID = "Your Project ID";
 
             Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", jsonpath);
             Console.WriteLine(Environment.GetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS"));
