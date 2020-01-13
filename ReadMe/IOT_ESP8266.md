@@ -12,7 +12,8 @@ NodeMCU Doc [Click Here](https://nodemcu.readthedocs.io/en/master/)
 - How to [upload code and NodeMCU IDEs](https://nodemcu.readthedocs.io/en/master/en/upload/)
 
 #### Other Links
-ESP8266 NodeMCU Uploader .NET Framework Based [Click Here](https://github.com/JeffCost/ESP8266_Lua_Uploader)
+- ESP8266 NodeMCU Uploader .NET Framework Based [Click Here](https://github.com/JeffCost/ESP8266_Lua_Uploader)
+- MyPoc Sample Lua Based Code [Click Here](https://github.com/anandnandagiri/MyPOC/tree/master/IOT/ESP8266_NodeMCU/Lua_SampleCode)
 #### Instruction
 - Inorder to use flash the firmware in Windows/Linux you need to install CP2102 Drivers [Click Here](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers)
 #### ESP8266 GPIO Pins Usage
