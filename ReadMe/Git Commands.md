@@ -84,7 +84,7 @@ git config --get remote.origin.fetch
 Dos command to delete all .git folders
 ```
 for /d /r . %d in (.git) do @if exist "%d" rd /s/q "%d"
-``
+```
 
  \
 Add Git Ignore File(On Windows OS)
