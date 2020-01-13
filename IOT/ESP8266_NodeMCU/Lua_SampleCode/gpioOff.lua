@@ -1,0 +1,7 @@
+gpio.write(1,gpio.LOW)
+gpio.write(2,gpio.LOW)
+gpio.write(3,gpio.LOW)
+gpio.write(4,gpio.LOW)
+gpio.write(5,gpio.LOW)
+gpio.write(6,gpio.LOW)
+gpio.write(7,gpio.LOW)

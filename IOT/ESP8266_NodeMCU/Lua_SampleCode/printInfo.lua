@@ -1,0 +1,7 @@
+print("ChipID    : "..node.chipid())
+print("FlashID   : "..node.flashid())
+print("FlashSize : "..node.flashsize())
+print("Node Info : ")
+print(node.info())
+print(wifi.sta.getip())
+print(wifi.ap.getip())

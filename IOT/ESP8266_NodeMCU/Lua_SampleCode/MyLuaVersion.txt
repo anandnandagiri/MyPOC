@@ -1,0 +1,145 @@
+TIPS
+
+1. Get URL and Parameters
+	_, _, method, url, vars = string.find(payload, "([A-Z]+) /([^?]*)%??(.*) HTTP")
+	local path = string.match(request, "GET /(.+) HTTP")
+	tgtfile = string.sub(req,string.find(req,"GET /") +5,string.find(req,"HTTP/") -2 )
+
+2.	
+
+header = "HTTP/1.0 200 OK\r\nServer: NodeMCU on ESP8266\r\nContent-Type: text/html\r\n\r\n"
+srv=net.createServer(net.TCP)
+srv:listen(80,function(conn)
+    conn:on ("receive", function(sck, req)
+        local response = {header}
+
+        tgtfile = string.sub(req,string.find(req,"GET /") +5,string.find(req,"HTTP/") -2 )
+        if tgtfile == "" then tgtfile = "index.htm" end
+        local f = file.open(tgtfile,"r")
+        if f ~= nil then
+            response[#response+1] = file.read()
+            file.close()
+        else
+            response[#response+1] = "<html>"
+            response[#response+1] = tgtfile.." not Found - 404 error."
+            response[#response+1] = "<a href='index.htm'>Home</a>"
+        end
+        collectgarbage()
+        f = nil
+        tgtfile = nil
+
+        local function sender ()
+            if #response>0 then sck:send(table.remove(response,1))
+            else sck:close()
+            end
+        end
+        sck:on("sent", sender)
+        sender()
+    end)
+end)
+
+
+3.
+
+function Sendfile(client, filename)
+    if file.open(filename, "r") then
+        local function sendChunk()
+            local line = file.read(512)
+            if line then 
+                client:send(line, sendChunk) 
+            else
+                file.close()
+                client:close()
+                collectgarbage()
+            end
+        end
+        client:send("HTTP/1.1 200 OK\r\n" ..
+            "Server: NodeMCU on ESP8266\r\n" ..
+            "Content-Type: text/html; charset=UTF-8\r\n\r\n", sendChunk)
+    else
+        client:send("HTTP/1.0 404 Not Found\r\n\r\nPage not found")
+        client:close()
+    end
+end
+
+
+srv = net.createServer(net.TCP)
+srv:listen(80, function(conn)
+    conn:on ("receive", function(client, request)
+        local path = string.match(request, "GET /(.+) HTTP")
+        if path == "" then path = "index.htm" end
+        Sendfile(client, path)
+    end)
+end)
+
+
+
+ ets Jan  8 2013,rst cause:2, boot mode:(3,7)
+
+load 0x40100000, len 28396, room 16 
+tail 12
+chksum 0x25
+ho 0 tail 12 room 4
+load 0x3ffe8000, len 2256, room 12 
+tail 4
+chksum 0x5c
+load 0x3ffe88d0, len 8, room 4 
+tail 4
+chksum 0x62
+csum 0x62
+don't use rtc mem data
+rl??Z?
+
+NodeMCU custom build by frightanic.com
+	branch: master
+	commit: b580bfe79e6e73020c2bd7cd92a6afe01a8bc867
+	SSL: false
+	modules: bit,coap,dht,enduser_setup,file,gpio,http,i2c,mdns,mqtt,net,node,ow,pwm,rc,rtctime,sntp,tmr,ucg,wifi
+ build 	built on: 2016-07-17 07:54
+ powered by Lua 5.1.4 on SDK 1.5.1(e67da894)
+192.168.0.101	255.255.255.0	192.168.0.1
+192.168.4.1	255.255.255.0	192.168.4.1
+
+
+On 4th Feb 2017 (Build on NodeMCUBuild.com)
+Your NodeMCU custom build finished successfully. You may now download the firmware:
+- float: http://nodemcu-build.com/builds/nodemcu-master-22-modules-2017-02-04-12-29-48-float.bin
+- integer: http://nodemcu-build.com/builds/nodemcu-master-22-modules-2017-02-04-12-29-48-integer.bin
+
+This was built against the master branch an
+
+
+function Sendfile(sck, filename, sentCallback)
+    if not file.open(filename, "r") then
+        sck:close()
+        return
+    end
+    local function sendChunk()
+        local line = file.read(512)
+        if line then 
+            sck:send(line, sendChunk) 
+        else
+            file.close()
+            collectgarbage()
+            if sentCallback then
+                sentCallback()
+            else
+                sck:close()
+            end
+        end
+    end
+    sendChunk()
+end
+
+
+srv = net.createServer(net.TCP)
+srv:listen(80, function(conn)
+    conn:on("receive", function(sck, req)
+        sck:send("HTTP/1.1 200 OK\r\n" ..
+            "Server: NodeMCU on ESP8266\r\n" ..
+            "Content-Type: text/html; charset=UTF-8\r\n\r\n", 
+            function()
+                Sendfile(sck, "head.html", function() Sendfile(sck, "body.html") end)
+            end)        
+    end)
+end)
