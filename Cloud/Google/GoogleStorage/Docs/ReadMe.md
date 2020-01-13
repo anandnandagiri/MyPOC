@@ -16,5 +16,5 @@ This POC is used to list and download all the storage blob
 Install-Package Google.Cloud.Storage.V1 -Version 2.4.0
 ```
 #### Caution
-	This will modify environment variable GOOGLE_APPLICATION_CREDENTIALS
-	You need to modify appConfig.json as per downloaded JSON from Service account you created
+1. This will modify environment variable GOOGLE_APPLICATION_CREDENTIALS
+2. You need to modify appConfig.json as per downloaded JSON from Service account you created
