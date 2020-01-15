@@ -1,0 +1,14 @@
+{
+  "name": "WebSocket",
+  "version": "1.0.0",
+  "description": "This WebSocket For IOT",
+  "main": "websocketserver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anand Nandagiri",
+  "license": "ISC",
+  "dependencies": {
+    "websocket": "^1.0.31"
+  }
+}
