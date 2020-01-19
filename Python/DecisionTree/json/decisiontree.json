@@ -1,0 +1,371 @@
+{
+	"Questions": {
+		"G": {
+			"Title": "",
+			"Type": 1,
+			"Answer" : [""],
+			"Node": [""],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G0": {
+			"Title": " Welcome! To Decision Tree On Google Cloud Platform",
+			"Type": 0,
+			"Answer" : [""],
+			"Node": ["G11"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G10": {
+			"Title": " Thank You For Using Decision Tree Application",
+			"Type": 10,
+			"Answer" : [""],
+			"Node": [""],
+			"Branch": [""],
+			"Script": ""
+		},
+		"YTI": {
+			"Title": "Yet To Implement (YTI)",
+			"Type": 4,
+			"Answer" : [""],
+			"Node": ["G10"],
+			"Branch": [""],
+			"Script": ""
+		},	
+		"G11": {
+			"Title": "Moving To Cloud",
+			"Type": 1,
+			"Answer" : [""],
+			"Node": ["G49","G16"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G16": {
+			"Title": "Re-Architect",
+			"Type": 5,
+			"Answer" : [""],
+			"Node": ["G18","G17"],
+			"Branch": ["G20"],
+			"Script": ""
+		},
+		"G17": {
+			"Title": "Customize OS Required",
+			"Type": 1,
+			"Answer" : [""],
+			"Node": ["G36","G19"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G36": {
+			"Title": "ServerLess",
+			"Type": 1,
+			"Answer" : [""],
+			"Node": ["G37","G38"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G37": {
+			"Title": "Create App Engine",
+			"Type": 9,
+			"Answer" : [""],
+			"Node": ["G10"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G38": {
+			"Title": "Need Containers",
+			"Type": 1,
+			"Answer" : [""],
+			"Node": ["G39","G40"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G39": {
+			"Title": "Create Compute Engine",
+			"Type": 9,
+			"Answer" : [""],
+			"Node": ["G10"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G40": {
+			"Title": "Kubernetes as Orchestration",
+			"Type": 1,
+			"Answer" : [""],
+			"Node": ["G41","G42"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G41": {
+			"Title": "Create Compute Engine",
+			"Type": 9,
+			"Answer" : [""],
+			"Node": ["G10"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G42": {
+			"Title": "Create Container Engine (GKE)",
+			"Type": 9,
+			"Answer" : [""],
+			"Node": ["G10"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G18": {
+			"Title": "Hybrid",
+			"Type": 5,
+			"Answer" : [""],
+			"Node": ["G43","G17"],
+			"Branch": ["G31"],
+			"Script": ""
+		},		
+		"G19": {
+			"Title": "Create Cloud Compute Engine",
+			"Type": 9,
+			"Answer" : [""],
+			"Node": ["G10"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G20": {
+			"Title": "Data Structured",
+			"Type": 1,
+			"Answer" : [""],
+			"Node": ["G21","G22"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G21": {
+			"Title": "Create Cloud Storage",
+			"Type": 9,
+			"Answer" : [""],
+			"Node": ["G10"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G22": {
+			"Title": "Need Analytics",
+			"Type": 1,
+			"Answer" : [""],
+			"Node": ["G23","G24"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G23": {
+			"Title": "Relation",
+			"Type": 1,
+			"Answer" : [""],
+			"Node": ["G27","G28"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G24": {
+			"Title": "Low Latency",
+			"Type": 1,
+			"Answer" : [""],
+			"Node": ["G25","G26"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G25": {
+			"Title": "Create Cloud BigQuery",
+			"Type": 9,
+			"Answer" : [""],
+			"Node": ["G10"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G26": {
+			"Title": "Create Cloud BigTable",
+			"Type": 9,
+			"Answer" : [""],
+			"Node": ["G10"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G27": {
+			"Title": "Create Cloud DataStore",
+			"Type": 9,
+			"Answer" : [""],
+			"Node": ["G10"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G28": {
+			"Title": "Horizontal Scalibility",
+			"Type": 1,
+			"Answer" : [""],
+			"Node": ["G29","G30"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G29": {
+			"Title": "Create Cloud SQL",
+			"Type": 9,
+			"Answer" : [""],
+			"Node": ["G10"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G30": {
+			"Title": "Create Cloud Spanner",
+			"Type": 9,
+			"Answer" : [""],
+			"Node": ["G10"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G31": {
+			"Title": "High Speed Connectivity",
+			"Type": 1,
+			"Answer" : [""],
+			"Node": ["G32","G33"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G32": {
+			"Title": "Peering",
+			"Type": 1,
+			"Answer" : [""],
+			"Node": ["G34","G35"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G33": {
+			"Title": "Create Cloud InterConnect",
+			"Type": 9,
+			"Answer" : [""],
+			"Node": ["G10"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G34": {
+			"Title": "Create VPN",
+			"Type": 9,
+			"Answer" : [""],
+			"Node": ["G10"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G35": {
+			"Title": "Create Direct/Carrier",
+			"Type": 9,
+			"Answer" : [""],
+			"Node": ["G10"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G12": {
+			"Title": "Do You Want To Create Below GCP Services",
+			"Type": 2,
+			"Answer": [
+				"1. Compute Engine (VM)",
+				"2. APP Engine",
+				"3. Kubernete Engine"
+			],
+			"Node": ["G13","G14","G15"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G13": {
+			"Title": "Name The VM",
+			"Type": 3,
+			"Answer" : [""],
+			"Node": ["G14"],
+			"Branch": [""],
+			"Script": "gcp script for VM {0}"
+		},
+		"G14": {
+			"Title": "Name The Zone",
+			"Type": 3,
+			"Answer" : [""],
+			"Node": ["G15"],
+			"Branch": [""],
+			"Script": "zone {0}"
+		},
+		"G15": {
+			"Title": "Generating Script below",
+			"Type": 5,
+			"Answer" : [""],
+			"Node": ["G10"],
+			"Branch": [""],
+			"Script": ""
+		},	
+		"G43": {
+			"Title": "Modernize",
+			"Type": 1,
+			"Answer" : [""],
+			"Node": ["G44","G46"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G44": {
+			"Title": "Lift & Shift Incase of No Modernize",
+			"Type": 4,
+			"Answer" : [""],
+			"Node": ["G45"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G45": {
+			"Title": "Create Compute Engine",
+			"Type": 9,
+			"Answer" : [""],
+			"Node": ["G10"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G46": {
+			"Title": "1. Modernize Applications",
+			"Type": 4,
+			"Answer" : [""],
+			"Node": ["G47"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G47": {
+			"Title": "2. Lift & Shift To Cloud Compute Engine",
+			"Type": 4,
+			"Answer" : [""],
+			"Node": ["G48"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G48": {
+			"Title": "3. Proceed With Re-Architect",
+			"Type": 4,
+			"Answer" : [""],
+			"Node": ["G10"],
+			"Branch": [""],
+			"Script": ""
+		},
+		"G49": {
+			"Title": "Stay On-Premise",
+			"Type": 4,
+			"Answer" : [""],
+			"Node": ["G10"],
+			"Branch": [""],
+			"Script": ""
+		}
+		
+	},
+	"Type": {
+		"0": "Start Questions",
+		"1": "Y/N",
+		"2": "Multiple Option",
+		"3": "Input Text",
+		"4": "Message On Console",
+		"5": "Branch",
+		"9": "GCP Script",
+		"10": "End Questions"
+	},
+	"About": {
+		"AppName": "Decision Tree Application",
+		"AppType": "Library",
+		"Version": "1.0",
+		"Author": "Anand",
+		"Email": "pavan.anand.n@gmail",
+		"Powered By": "Python"
+	}
+}
