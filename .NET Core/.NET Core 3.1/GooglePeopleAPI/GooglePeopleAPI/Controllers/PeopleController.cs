@@ -13,6 +13,7 @@ using Google.Apis.PeopleService.v1;
 using Google.Apis.PeopleService.v1.Data;
 using Microsoft.Extensions.Configuration;
 
+
 namespace GooglePeopleAPI.Controllers
 {
     public class PeopleController : Controller
@@ -28,13 +29,16 @@ namespace GooglePeopleAPI.Controllers
         public async Task<IActionResult> Index()
         {
             string gCode = Request.Query["code"].ToString();
+            TempData["code"] = gCode;
+            HttpContext.Items["code"] = gCode;
             //return await Index(gCode);
-            return RedirectToAction("Contact", new { gCode });
+            return RedirectToAction("Contact");
         }
 
 
-        public async Task<IActionResult> Contact(string gCode)
+        public async Task<IActionResult> Contact()
         {
+            string gCode = TempData["code"].ToString();
             string ClientSecret = _config.GetValue<string>("GooglePoepleAPI:ClientSecret");
             string ClientId = _config.GetValue<string>("GooglePoepleAPI:ClientId");
 
@@ -85,14 +89,26 @@ namespace GooglePeopleAPI.Controllers
                 listOnView.Add("Groups: " + group.FormattedName);
             }
 
-            PeopleResource.ConnectionsResource.ListRequest peopleRequest = service.People.Connections.List("people/me");
+            Google.Apis.PeopleService.v1.PeopleResource.ConnectionsResource.ListRequest peopleRequest = service.People.Connections.List("people/me");
             peopleRequest.PersonFields = "names,emailAddresses,phoneNumbers";
-            peopleRequest.SortOrder = (PeopleResource.ConnectionsResource.ListRequest.SortOrderEnum)1;
+            peopleRequest.SortOrder = (Google.Apis.PeopleService.v1.PeopleResource.ConnectionsResource.ListRequest.SortOrderEnum)1;
             peopleRequest.PageSize = 1999;
             ListConnectionsResponse people = peopleRequest.Execute();
 
-            //_ = await userCredential.RevokeTokenAsync(CancellationToken.None);   
-            // Process.Start(new ProcessStartInfo("cmd", $"/c start \"\" \"{url}\"") { CreateNoWindow = true });  
+
+            //      are: * addresses * ageRanges * biographies * birthdays * braggingRights * coverPhotos
+            //     * emailAddresses * events * genders * imClients * interests * locales * memberships
+            //     * metadata * names * nicknames * occupations * organizations * phoneNumbers *
+            //     photos * relations * relationshipInterests * relationshipStatuses * residences
+            //     * sipAddresses * skills * taglines * urls * userDefined
+
+            var me = service.People.Get("people/me");
+            me.PersonFields = "names,emailAddresses,phoneNumbers,birthdays,coverPhotos,metadata,events";
+            var aboutMe = me.Execute();
+            ViewBag.AboutMe = aboutMe;
+            
+          
+
 
             ViewBag.ContactList = people.Connections;
             return View();
