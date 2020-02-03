@@ -1,0 +1,68 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    int sno = 0;
+}
+
+
+<div class="text-left">
+    @*@foreach (string s in ViewBag.ContactList)
+        {
+            <label>@s</label><br />
+        }*@
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>SNo.</th>
+                <th>Name</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var person in ViewBag.ContactList)
+            {
+                sno = sno + 1;
+                <tr>
+                    <td>@sno</td>
+                    <td>
+                        @if (person.Names != null)
+                        {
+                            foreach (var n in person.Names)
+                            {
+                                <label>@n.DisplayName </label>
+                            }
+                        }
+                        else
+                        {
+                    <label>@sno </label>
+                        }
+                    </td>
+                    <td>
+                        @if (person.PhoneNumbers != null)
+                        {
+                            foreach (var ph in person.PhoneNumbers)
+                            {
+                                <label>@ph.Value </label>
+                                <br />
+                            }
+                        }
+                    </td>
+                    <td>
+                        @if (person.EmailAddresses != null)
+                        {
+                            foreach (var e in person.EmailAddresses)
+                            {
+                                <label>@e.Value </label>
+                                <br />
+                            }
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+

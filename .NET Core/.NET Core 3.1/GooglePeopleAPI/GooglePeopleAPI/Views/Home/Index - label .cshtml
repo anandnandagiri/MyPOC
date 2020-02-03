@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="text-left">
+    @*@foreach (string s in ViewBag.ContactList)
+        {
+            <label>@s</label><br />
+        }*@
+
+    @foreach (var person in ViewBag.ContactList)
+    {
+
+        <br /> <br /><label><b>Name </b></label><br />
+        foreach (var n in person.Names)
+        {
+            <label>Given Name:  @n.GivenName </label><br />
+            <label>DisplayName: @n.DisplayName </label><br />
+            <label>LastName: @n.DisplayNameLastFirst</label><br />
+            <label>MiddelName: @n.MiddleName</label><br />
+            <label>FamilyName: @n.FamilyName</label><br />
+        }
+        <br />
+        <label><b>Mobile Numbers</b></label><br />
+        string strPhone = string.Empty;
+        if (person.PhoneNumbers != null)
+        {
+            foreach (var ph in person.PhoneNumbers)
+            {
+                <label>@ph.Type   @ph.Value;</label><br />
+            }
+
+        }
+
+        <br /><label><b>Email IDs</b></label>
+        string strEmail = string.Empty;
+        if (person.EmailAddresses != null)
+        {
+            foreach (var e in person.EmailAddresses)
+            {
+                <label>@e.Type   @e.Value;</label><br />
+            }
+
+        }
+    }
+
+</div>

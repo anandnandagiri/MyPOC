@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GooglePeopleAPI", "GooglePeopleAPI\GooglePeopleAPI.csproj", "{036095CE-9667-4722-87E9-5C48CE7729DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{7F93CB10-19D3-4B73-9E91-E02FB660138D}"
+	ProjectSection(SolutionItems) = preProject
+		Docs\ReadMe.txt = Docs\ReadMe.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{902B41D2-9AD3-4275-A632-B290CE626980}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{036095CE-9667-4722-87E9-5C48CE7729DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{036095CE-9667-4722-87E9-5C48CE7729DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{036095CE-9667-4722-87E9-5C48CE7729DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{036095CE-9667-4722-87E9-5C48CE7729DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{036095CE-9667-4722-87E9-5C48CE7729DB} = {902B41D2-9AD3-4275-A632-B290CE626980}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8AC52820-E246-4328-8E52-312080D207C2}
+	EndGlobalSection
+EndGlobal
