@@ -77,6 +77,16 @@ from sys.columns col inner join sys.tables tab
 on col.object_id = tab.object_id where col.name='ACID'
 ```
 
+#### List All Tables with Zero(0) Records
+```
+SELECT t.NAME AS TableName, p.rows AS RowCounts
+FROM sys.tables t
+INNER JOIN sys.partitions p ON t.object_id = p.OBJECT_ID 
+WHERE t.is_ms_shipped = 0 AND p.rows = 0
+GROUP BY t.Name, p.Rows
+ORDER BY t.Name
+```
+
 #### Most Used Table Based On No of Times Accessed
 ```
 SELECT 
