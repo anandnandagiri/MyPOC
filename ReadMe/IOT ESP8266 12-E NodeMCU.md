@@ -1,5 +1,5 @@
 
-# IOT - ESP8266 - NodeMCU
+# IOT - ESP8266 12-E - NodeMCU
 The ESP8266 is a low-cost Wi-Fi microchip with full TCP/IP stack and microcontroller capability produced by manufacturer Espressif Systems in Shanghai, China.
 
 NodeMCU is an open source IoT platform. It includes firmware which runs on the ESP8266 Wi-Fi SoC from Espressif Systems, and hardware which is based on the ESP-12 module
