@@ -1,5 +1,13 @@
  # ReadMe Docker Commands
 
+Docker Install
+```
+sudo apt-get install docker.io
+sudo docker version
+sudo service docker start
+``
+
+
 Docker Common Commands	
 ```
 docker version
