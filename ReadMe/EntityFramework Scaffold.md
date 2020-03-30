@@ -27,7 +27,10 @@ public void ConfigureServices(IServiceCollection services)
       );
 ...
 ```
-
+Most Used Dotnet Core Commands
+```
+dotnet watch run
+```
 Most Used Create Table With Common Fields
 ```	
 CREATE TABLE [dbo].[MyTable] (
