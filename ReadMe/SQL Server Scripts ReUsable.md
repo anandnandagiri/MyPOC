@@ -1,3 +1,8 @@
+#### Complete SQL Server Details
+```
+xp_msver
+```
+
 #### Default SQL Instances
 ```
 (localdb)\MSSQLLocalDB
