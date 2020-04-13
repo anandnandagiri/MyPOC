@@ -16,8 +16,14 @@ Add Connection String
 Generate Code Entity DB Context (DB First Approach)
 ```
 Scaffold-DbContext "Server=(localdb)\MSSQLLocalDB;Database=mydb;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -force -UseDatabaseNames
+Scaffold-DbContext "Server=(localdb)\MSSQLLocalDB;Database=mydb;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Model -Context "MyDBContext" -DataAnnotations -force
 ```
-
+\
+Scaffold Template location
+```
+%USERPROFILE%\.nuget\packages\microsoft.visualstudio.web.codegenerators.mvc
+```
+\
 Make Sure You Have Below AddDbContext in Startup
 ```
 public void ConfigureServices(IServiceCollection services)
@@ -27,18 +33,40 @@ public void ConfigureServices(IServiceCollection services)
       );
 ...
 ```
+\
 Most Used Dotnet Core Commands
 ```
 dotnet watch run
 ```
+\
 Most Used Create Table With Common Fields
 ```	
 CREATE TABLE [dbo].[MyTable] (
     [ID]         INT   PRIMARY       IDENTITY (1, 1) NOT NULL,
     [Name]       VARCHAR (50) NULL,
+    
     [Isactive]   BIT          DEFAULT ((1)) NOT NULL,
-    [CreateDate] DATETIME     DEFAULT (getdate()) NOT NULL,
+    [CreatedDate] DATETIME     DEFAULT (getdate()) NOT NULL,
     [ModifiedDate] DATETIME   NULL,
     PRIMARY KEY CLUSTERED ([ID] ASC),
     //CONSTRAINT [FK_GData_ServiceID] FOREIGN KEY ([GServiceID]) REFERENCES [dbo].[GService] ([ID])
 );
+```
+\
+Migrate SQL Server Table To SQLlite Tables
+```
+Step 1:	Delete Migrations Folder If exists
+Step 2: Run Below commands in Package Manager Console with project selected
+            Add-Migration InitialCreate
+
+Step 3: Replace ALL FILES below text in Migrations Folder such as MyDBContextModelSnapshot.cs
+            getdate()----->CURRENT_TIMESTAMP
+
+        Above issue Got Resolved After Adding VAapps.EM.DB with Nuget Package Microsoft.AspNetCore.Identity.EntityFrameworkCore
+        Also Added base.OnModelCreating(modelBuilder); in MyDBContext.cs in method 
+            protected override void OnModelCreating(ModelBuilder modelBuilder)
+
+Step 4: Run Below commands in Package Manager Console with project selected
+		    Update-Database
+
+```
