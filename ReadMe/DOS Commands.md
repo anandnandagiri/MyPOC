@@ -16,3 +16,8 @@ for /r %f in (*.txt) do find /v /c "" "%f" >>externalref.txt
 ```
 for /F "tokens=*" %1 in ('wevtutil.exe el') DO wevtutil.exe cl "%1
 ```
+
+#### DOS Command to kill node process
+```
+taskkill /F /IM node.exe
+```
