@@ -46,48 +46,66 @@ Second Add User Commands
 	Don't want sudo every time use command sudo -s
 
 	
-Create Batch File
------------------
-	nano myfirstbatch.sh
-	add below code
-		#!/bin/bash 
-		echo "Hello World!"
-	Make file executable
-		chmod +x runme.sh
-	Run the file from terminal:
-		./runme.sh
+#### Create Batch File
+```
+nano myfirstbatch.sh
+add below code
+	#!/bin/bash 
+	echo "Hello World!"
+Make file executable
+	chmod +x runme.sh
+Run the file from terminal:
+	./runme.sh
+```
+
+#### Install/Unintall Commands
+```
+sudo apt-get purge packagename
+sudo apt-get remove packagename
+sudo apt-get autoremove
+sudo aptitude remove packagename (Orphand packages)
 
 
-Install/Unintall Commands
----------------------------------
-	sudo apt-get purge packagename
-	sudo apt-get remove packagename
-	sudo apt-get autoremove
-	sudo aptitude remove packagename (Orphand packages)
+cat /lib/systemd/system/nginx.service
 
+sudo systemctl status nginx
+sudo systemctl restart nginx
+sudo systemctl enable nginx
+/etc/nginx/sites-available/
+```
 
-	cat /lib/systemd/system/nginx.service
+#### Copy MyWebSite to ReadOnly Place
+```
+sudo cp -a . /var/mywebsite/
+```
+#### Copy MyWebSite to ReadOnly Place Recursivelly
+```
+sudo cp -r . /var/www/html	
+```
+#### Create MyWebSite
+```
+sudo cd /lib/systemd/system/
+sudo pico mywebsite.service
 
-	sudo systemctl status nginx
-	sudo systemctl restart nginx
-	sudo systemctl enable nginx
-	/etc/nginx/sites-available/
-
-
-Copy MyWebSite to ReadOnly Place
-	sudo cp -a . /var/mywebsite/
-Copy MyWebSite to ReadOnly Place Recursivelly
-	sudo cp -r . /var/www/html	
-Create MyWebSite
-	sudo cd /lib/systemd/system/
-	sudo pico mywebsite.service
-
-	sudo systemctl daemon-reload
-	sudo systemctl start mywebsite
-	sudo systemctl enable mywebsite
-
-CPU Info
+sudo systemctl daemon-reload
+sudo systemctl start mywebsite
+sudo systemctl enable mywebsite
+```
+#### CPU Info
+```
 cat /proc/cpuinfo
+```
 
-If you just want the cpu load to continue until you press Ctrl-C:
+#### If you just want the cpu load to continue until you press Ctrl-C:
+```
 seq 3 | xargs -P0 -n1 md5sum /dev/zero
+```
+#### Cron JOBs
+```
+crontab -e
+	SHELL=/bin/bash
+	PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/home/myfolder
+	* * * * * /home/myfolder/cronjob.sh
+	* * * * * /bin/echo "cron works" >> /tmp/file
+cat /etc/crontab
+```
