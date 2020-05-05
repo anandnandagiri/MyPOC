@@ -109,3 +109,10 @@ crontab -e
 	* * * * * /bin/echo "cron works" >> /tmp/file
 cat /etc/crontab
 ```
+#### Cron JOBS TroubleShoot
+```
+ps ax | grep cron
+pgrep cron
+sudo /etc/init.d/cron start
+sudo service cron restart
+```
