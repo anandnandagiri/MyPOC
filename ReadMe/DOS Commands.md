@@ -1,3 +1,8 @@
+#### Most used DOS Commands
+```
+systeminfo
+winver
+```
 #### DOS command to delete bin & obj Folders
 ```
 @echo off
