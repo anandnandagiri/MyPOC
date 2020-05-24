@@ -2,9 +2,9 @@
 #### Method 1: Own Proxy Server using free VM t2.micro
 
 	Create a free VM with proxy enabled	
-		Select Free Amazon Machine Image(AMI)	: Ubuntu Server 18.04 LTS (HVM), SSD Volume Type
-		Select Instance Type					: t2.micro
-		Select Location							: us-east-1,us-east-2,us-west-1,us-west-2,eu-central-1,eu-west-1,eu-west-2,eu-west-3,eu-south-1,sa-east-1
+		Select Free Amazon Machine Image(AMI): Ubuntu Server 18.04 LTS (HVM), SSD Volume Type
+		Select Instance Type: t2.micro
+		Select Location: us-east-1,us-east-2,us-west-1,us-west-2,eu-central-1,eu-west-1,eu-west-2,eu-west-3,eu-south-1,sa-east-1
 
 	Install Squid Proxy Server and Configure to use
 		sudo -s
