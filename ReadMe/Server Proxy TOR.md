@@ -33,15 +33,17 @@
 	1. Tor Support SOCK 9050. Change Proxy Setting from Control Panel > Internet Option > Connection > Lan Setting
 	2. Tor Service Change IP for every 10 Minutes
 	3. Page Load Will Be slow & Few Sites Block with Captcha
-	More info on https://deepdarkweb.github.io/how-to-install-tor-on-windows-without-the-tor-browser-running-tutorial/
+	
+	More info
+	https://deepdarkweb.github.io/how-to-install-tor-on-windows-without-the-tor-browser-running-tutorial/
 	https://miloserdov.org/?p=2062
 	https://miloserdov.org/?p=1839
 	
 
 #### Method 3: Get Free Proxy List https://hidemy.name/en/proxy-list/
 	
-	While Getting list of Free Proxy Provider List --->		Proxy IP & Port
+	While Getting list of Free Proxy Provider List ---> Proxy IP & Port
 		Proxy Speed : <800ms
-		Proxy Type	: http,https, Socks 4, Socks 5
-		Anonymity	: High
+		Proxy Type : http,https, Socks 4, Socks 5
+		Anonymity : High
 		
