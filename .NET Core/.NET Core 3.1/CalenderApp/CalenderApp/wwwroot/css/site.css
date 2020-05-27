@@ -1,4 +1,4 @@
-/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
 a.navbar-brand {
@@ -7,12 +7,28 @@ a.navbar-brand {
   word-break: break-all;
 }
 
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
   font-size: 14px;
 }
-
 @media (min-width: 768px) {
   html {
     font-size: 16px;
@@ -22,7 +38,6 @@ html {
 .border-top {
   border-top: 1px solid #e5e5e5;
 }
-
 .border-bottom {
   border-bottom: 1px solid #e5e5e5;
 }
@@ -46,47 +61,15 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
-  background-color: black;
-  color: deeppink;
 }
-
-.navbar-light .navbar-brand {
-  color: deeppink;
-}
-
-  .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
-    color: deeppink;
-  }
-
-a {
-  color: deeppink;
-}
-
-.card-body {
-  background-color: black;
-  color: deeppink;
-}
-
-.btn-primary {
-  background-color: deeppink;
-  border-color: deeppink;
-}
-
-.mypink {
-  background-color: deeppink;
-  border-color: deeppink;
-}
-
-.table {
-  color: deeppink;
-}
-
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   white-space: nowrap;
-  /* Set the fixed height of the footer here */
-  height: 60px;
   line-height: 60px; /* Vertically center the text there */
+}
+
+.fab {
+    font-size: 20px;
 }

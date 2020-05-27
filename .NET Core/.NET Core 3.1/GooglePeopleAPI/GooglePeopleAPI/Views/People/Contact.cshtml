@@ -31,7 +31,7 @@
             </tr>
             <tr>
                 <td>Email</td>
-                @if (ViewBag.AboutMe.EmailAddresses.Count > 0)
+                @if (ViewBag.AboutMe.EmailAddresses != null ViewBag.AboutMe.EmailAddresses.Count > 0)
                 {
             <td>@ViewBag.AboutMe.EmailAddresses[0].Value</td>
                 }
@@ -42,7 +42,7 @@
             </tr>
             <tr>
                 <td>Your Contact</td>
-                @if (ViewBag.AboutMe.PhoneNumbers.Count > 0)
+                @if (ViewBag.AboutMe.PhoneNumbers !=null && ViewBag.AboutMe.PhoneNumbers.Count > 0)
                 {
             <td>@ViewBag.AboutMe.PhoneNumbers[0].Value</td>
                 }
@@ -53,7 +53,7 @@
             </tr>
             <tr>
                 <td>Birthday</td>
-                @if (ViewBag.AboutMe.Birthdays.Count > 0)
+                @if (ViewBag.AboutMe.Birthdays!=null && ViewBag.AboutMe.Birthdays.Count > 0)
                 {
             <td>@ViewBag.AboutMe.Birthdays[0].Date.Day/@ViewBag.AboutMe.Birthdays[0].Date.Month/@ViewBag.AboutMe.Birthdays[0].Date.Year </td>
                 }
@@ -64,7 +64,7 @@
             </tr>
             <tr>
                 <td>Your Photo</td>
-                @if (ViewBag.AboutMe.CoverPhotos.Count > 0)
+                @if (ViewBag.AboutMe.CoverPhotos != null && ViewBag.AboutMe.CoverPhotos.Count > 0)
                 {
                     <td><img src="@ViewBag.AboutMe.CoverPhotos[0].Url" /></td>
                 }

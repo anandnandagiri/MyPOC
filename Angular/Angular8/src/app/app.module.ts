@@ -17,6 +17,9 @@ import { AppversionInfoComponent } from './appversion/appversioninfo.component';
 import { UserDeviceInfoComponent } from './user-device-info/user-device-info.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { TaskService  } from './shared/task.service';
+import { TaskListComponent } from './task/task-list/task-list.component';
+import { TaskGroupComponent } from './task/task-group/task-group.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,9 @@ import { environment } from '../environments/environment';
     TaskComponent,
     ListComponent,
     AppversionInfoComponent,
-    UserDeviceInfoComponent
+    UserDeviceInfoComponent,
+    TaskListComponent,
+    TaskGroupComponent
   ],
   imports: [
     NgbModule,
@@ -38,7 +43,7 @@ import { environment } from '../environments/environment';
     DeviceDetectorModule.forRoot(),
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
-  providers: [],
+  providers: [TaskService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

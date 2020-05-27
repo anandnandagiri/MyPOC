@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>
+            Title
+          </th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let task of TaskList">
+        <tr class="d-flex">
+          <td class="col-10">
+           {{task.Title}}
+          </td>
+          <td class="col-2">
+            <a href="/MyTasks/Edit/{{task.id}}"><fa-icon [icon]="faEdit"></fa-icon></a>
+            <a href="/MyTasks/Delete/{{task.id}}"><fa-icon [icon]="faTrashAlt"></fa-icon></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

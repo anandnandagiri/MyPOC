@@ -1,4 +1,5 @@
 External Links
+	https://developers.google.com/api-client-library/dotnet/apis/
 	https://github.com/googleapis/google-api-dotnet-client/issues/1486
 
 	https://www.yogihosting.com/implementing-google-contacts-api-version-3-0-oauth-2-0-in-csharp-and-asp-net/

@@ -45,6 +45,18 @@ ng update @angular/cli
 * nginx.conf is modified to support PWA, mime type application/manifest+json  webmanifest;
 
 
+## Specific AngularCLI Commands for this project
+```
+ng g c task --skipTests=false -s
+ng g c task/task-list --skipTests=false -s
+ng g c task/task-group --skipTests=false -s
+ng g s shared/task --skipTests=false 
+
+npm install jquery@1.9.1 --save
+npm install popper.js@^1.14.7 --save
+```
+
+
 ## Most Used AngularCLI Commands
 `ng serve --open`
  \
