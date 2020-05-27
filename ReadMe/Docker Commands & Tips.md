@@ -1,5 +1,13 @@
  # ReadMe Docker Commands
 
+Docker Install
+```
+sudo apt-get install docker.io
+sudo docker version
+sudo service docker start
+```
+
+
 Docker Common Commands	
 ```
 docker version
@@ -70,6 +78,14 @@ Docker Run In Interaction mode and once exit remove container
 ```
 docker run -it --rm <Image> cmd
 docker run -it --rm <Image> sh
+```
+Docker In Interaction mode, once exit remove container and override entrypoint
+\
+Most of the case this will used to debug broken container
+```
+docker run -it --rm  --entrypoint=cmd <Image>		/* For Windows Image*/
+docker run -it --rm  --entrypoint=/bin/bash <Image>	/* For ubuntu Image*/
+docker run -it --rm  --entrypoint=/bin/ash <Image> 	/* For alpine Image*/
 ```
 Docker stop all container and remove
 ```
