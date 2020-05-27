@@ -1,0 +1,40 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+		{
+            "Action": [
+                "ec2:DescribeInstances",
+                "ec2:DescribeSecurityGroups",
+                "ec2:DescribeSecurityGroupReferences",
+                "ec2:DescribeStaleSecurityGroups"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+			"Condition": {
+                "StringEquals": {
+                    "ec2:Region": "ap-south-1"
+                }
+			}
+        },
+        {
+            "Action": [
+                "ec2:AuthorizeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:RevokeSecurityGroupEgress",
+                "ec2:RevokeSecurityGroupIngress",
+                "ec2:StartInstances",
+                "ec2:StopInstances"
+            ],
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/<your instance ID>",							
+                "arn:aws:ec2:*:*:security-group/<your securit group>"
+            ],
+            "Effect": "Allow",
+			"Condition": {
+                "StringEquals": {
+                    "ec2:Region": "ap-south-1"
+                }
+			}
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCR", "OCR\OCR.csproj", "{97A987BE-FB8F-4551-B137-FB5E2841E6D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{3BFAAB91-B73E-4FB6-B6F5-C4FBF1C4C3D8}"
+	ProjectSection(SolutionItems) = preProject
+		docs\ReadMe.txt = docs\ReadMe.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{798838B8-2F88-455A-BC99-AB4F13A50DEB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{64803515-6A04-496B-AC37-BA5CA24A329C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97A987BE-FB8F-4551-B137-FB5E2841E6D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97A987BE-FB8F-4551-B137-FB5E2841E6D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97A987BE-FB8F-4551-B137-FB5E2841E6D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97A987BE-FB8F-4551-B137-FB5E2841E6D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{97A987BE-FB8F-4551-B137-FB5E2841E6D0} = {798838B8-2F88-455A-BC99-AB4F13A50DEB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF3E90D8-682B-4002-9FF9-6CC8393F35BA}
+	EndGlobalSection
+EndGlobal
