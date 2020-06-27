@@ -70,12 +70,8 @@ Avoid click jack attack
 
 Prevents the client from "sniffing" the asset to try and determine if the file type is something other than what is declared by the server
 ```
+<remove name="X-Content-Type-Options" />
 <add name="X-Content-Type-Options" value="nosniff" />
-```
-
-Stops pages from loading when they detect reflected cross-site scripting (XSS) attacks
-```
-<remove name="X-Content-Type-Options" /> 
 ```
 
 Prevents XSS attacks
@@ -83,6 +79,16 @@ Prevents XSS attacks
 <add name="X-XSS-Protection" value="1; mode=block" />
 ```
 
+There are enhancements added to request validation starting with ASP.NET 4.5 that include deferred ("lazy") validation, the ability to opt-out at the server control level, and the ability to access unvalidated data. In order to leverage these enhancements you will need to ensure that requestValidationMode has been set to "4.5" in web.config:
+```
+<httpRuntime requestValidationMode="4.5" targetFramework="4.5" />
+```
+
+Starting with ASP.NET 4.5 you can disable request validation at the individual server control level by setting ValidateRequestMode to “Disabled”.
+```
+<@ Page ValidateRequest="false" %>
+<asp:TextBox ID="txtASPNet" ValidateRequestMode="Disabled" runat="server" />
+```
 Prevent the client from caching the response
 ```
 <add name="pragma" value="no-cache" />
