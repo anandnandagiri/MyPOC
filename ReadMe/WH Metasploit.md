@@ -1,4 +1,6 @@
-#### Metasploitable Framework
+#### Metasploit Framework
+
+This framework is build on RUBY Language and used for testing and exploit Vulnerability in network
 
 Most Used Commands
 ```
@@ -8,6 +10,7 @@ use auxiliary/scanner/smb/smb_version
     info
     show option
     run
+    exploit
 ```
 
 Common Paths
