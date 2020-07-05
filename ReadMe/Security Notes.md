@@ -1,9 +1,11 @@
 #### Security
-* Use HTTPS
+* Use HTTPS (always redirect from HTTP)
 * Use HSTS
-* Use HTTPOnly Cookies for Secured Cookie
-* Use JWT Tokens
-* CORS
+* Use HTTPOnly Cookies for Secured Cookie or JWT Tokens
+* Enable CORS
+* Remove HTTP Headers with server
+* Add HTTP Header protect from XSS, click jack, CSP(Content-Security-Policy)
+* Robots.txt not to show on Google Dorks
 
 #### Snooping
 * IP

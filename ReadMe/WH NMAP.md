@@ -2,6 +2,7 @@
 
 Most Used Commands
 ```
+nmap --script-updatedb
 nmap 192.168.1.10
 nmap -sV 192.168.1.10
 ```
@@ -16,6 +17,8 @@ NSE Script Categories
 * Exploit
 * Fuzzer
 * Malware
+
+Path /usr/share/nmap/scripts
 
 Most Used Commands
 ```
