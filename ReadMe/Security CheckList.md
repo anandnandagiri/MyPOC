@@ -43,9 +43,14 @@ Note: Some firewalls you may need to enable outbound for 443 for response
     * Implement Captcha for Open Forms
     * In some case use Server.Transfer instead of Response.Redirect to avoid session hijack when your using session ID in request query string (This will be performance issue but security is priority)
     * File Upload Case: Best approach is rename file name to GUID without extension, save map info GUID with file name in DB to retrieve later. In this approach we can avoid certain File Inclusion attack
+    * Avoid SQL Injection using store procedure or Entity Framework
     * Avoid cache for secure data
 
 * #### Security Monitor/Log
     * Every Login and invalid login attempt will be captured in web application along with Client Public IP
     * Every File Upload and download will be captured in web application along with Client Public IP
     * Log All Global Exception to capture any miscellaneous activities on web.
+
+* #### Other Reference
+    * [ASP.NET Security Web.config](https://github.com/anandnandagiri/MyPOC/blob/master/ReadMe/Security%20ASP.NET%20Web.config.md)
+    

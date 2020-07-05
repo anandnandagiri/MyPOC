@@ -15,7 +15,7 @@
 * intext
 
 #### GHDB Google Hacking Database
-* https://www.exploit-db.com/google-hacking-database
+* [Exploit DB](https://www.exploit-db.com/google-hacking-database)
 
 #### Tools
-[More Info]()
+[More Info](https://github.com/anandnandagiri/MyPOC/blob/master/ReadMe/WH%20Tools%20List.md)
