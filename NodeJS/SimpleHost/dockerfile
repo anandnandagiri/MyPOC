@@ -1,0 +1,5 @@
+FROM node:lts-alpine
+WORKDIR /app
+COPY server.js /app		
+CMD node server.js
+EXPOSE 8080
