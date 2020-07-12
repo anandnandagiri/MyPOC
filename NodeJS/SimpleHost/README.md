@@ -5,3 +5,8 @@ node server.js
 docker build -t nodepoc .
 docker run -p 8000:8080 nodepoc
 ```
+
+Available On Docker HUB
+```
+docker pull anandnandagiri/simplehost
+```
