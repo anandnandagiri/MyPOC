@@ -34,6 +34,14 @@ docker run -it <image>
 docker run -it -v <path of host>:<path of container> <image>
 ```
 
+How to push local docker image to docker hub
+```
+docker login --username=<hub username>
+docker build -t <tag name> build .
+docker tag <image id> <hub username>/<repo name>
+docket push <hub username>/<repo name>
+```
+
 Docker Inspect
 ```	
 docker Inspect <ContainerID or Name>
