@@ -34,14 +34,6 @@ docker run -it <image>
 docker run -it -v <path of host>:<path of container> <image>
 ```
 
-How to push local docker image to docker hub
-```
-docker login --username=<hub username>
-docker build -t <tag name> build .
-docker tag <image id> <hub username>/<repo name>
-docket push <hub username>/<repo name>
-```
-
 Docker Inspect
 ```	
 docker Inspect <ContainerID or Name>
@@ -110,4 +102,12 @@ docker rmi $(docker images --filter "dangling=true" -q --no-trunc)
 Docker Copy From File From Image
 ```
 docker cp <container name or ID>:<Source File>  <Destination File>
+```
+
+#### How To Push Local Docker Image to Docker HUB
+```
+docker login --username=<hub username>
+docker build -t <tag name> build .
+docker tag <image id> <hub username>/<repo name>
+docket push <hub username>/<repo name>
 ```
