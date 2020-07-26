@@ -45,7 +45,9 @@ Note: Some firewalls you may need to enable outbound for 443 for response
     * File Upload Case: Best approach is rename file name to GUID without extension, save map info GUID with file name in DB to retrieve later. In this approach we can avoid certain File Inclusion attack
     * Avoid SQL Injection using store procedure or Entity Framework
     * Avoid cache for secure data
-
+* #### Server Configuration
+    * Disable all Less than TLS 1.2
+    * Web Server Internal IP Address/Internal Network Name Disclosure Vulnerability
 * #### Security Monitor/Log
     * Every Login and invalid login attempt will be captured in web application along with Client Public IP
     * Every File Upload and download will be captured in web application along with Client Public IP
