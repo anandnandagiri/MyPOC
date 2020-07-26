@@ -99,7 +99,11 @@ Indicates that once a resource becomes stale, caches must not use their stale co
 <add name="Cache-Control" value="no-cache, no-store, must-revalidate" />
 ```
 
-
+Time Out, also play other way security
+```
+<sessionState timeout="15" mode="InProc"></sessionState> //In Minutes
+<httpRuntime executionTimeout="90" enableVersionHeader="false" /> //In Seconds
+```
 
 
 
