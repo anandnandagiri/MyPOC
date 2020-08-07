@@ -12,10 +12,12 @@ I have importated my book marks from chrome which will be in below format
 ```
 <A HREF="https://www.amazon.in/" ADD_DATE="1440107359" ICON="data:image/png;base64,iVBORw..."></A>
 <A HREF="https://www.amazon.in/" ADD_DATE="1440107359"></A>
+SELECT * FROM tblJobType  Where PackId = @PackId AND VersionId = @VersionId and Status  = 1
 ```
 
 To Take only link part I have used find & replace with below Regex pattern respectively
 ```
 ADD_DATE=\"\w+" ICON=\"\w.+\" \
 ADD_DATE=\"\w+"
+FROM \w.+ WHERE
 ```
