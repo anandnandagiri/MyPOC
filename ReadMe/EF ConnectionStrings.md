@@ -2,5 +2,5 @@
 
 * #### (Localdb)
 ```
-Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=PearsonUserMgmt_ProtoType_Test;Integrated Security=SSPI
+Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=MyDB;Integrated Security=SSPI
 ```
