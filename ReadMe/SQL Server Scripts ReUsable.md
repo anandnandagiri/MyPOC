@@ -92,6 +92,21 @@ GROUP BY t.Name, p.Rows
 ORDER BY t.Name
 ```
 
+#### List All Tables With No of Record
+```
+SELECT 
+    t.NAME AS TableName,
+    p.[Rows]
+FROM 
+    sys.tables t
+INNER JOIN      
+    sys.indexes i ON t.OBJECT_ID = i.object_id
+INNER JOIN 
+    sys.partitions p ON i.object_id = p.OBJECT_ID AND i.index_id = p.index_id
+where t.name not like '%%'
+order by 1 desc
+```
+
 #### Most Used Table Based On No of Times Accessed
 ```
 SELECT 
