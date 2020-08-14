@@ -1,8 +1,10 @@
 # Security checklist while deploying Web Applications
 * #### HTTP Header
-    * Add X-FRAME-OPTIONS DENY
-    * Add X-Content-Type-Options NOSNIFF
-    * Add X-XSS-Protection 1; mode=block
+    * Add X-FRAME-OPTIONS: DENY
+    * Add X-Content-Type-Options: NOSNIFF
+    * Add X-XSS-Protection: 1; mode=block
+    * Add Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+    * Add Content-Security-Policy: default-src 'self'
     * Remove X-Powered-By
     * Remove Server Name and Version
 
