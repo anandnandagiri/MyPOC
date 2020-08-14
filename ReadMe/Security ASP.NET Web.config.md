@@ -52,7 +52,7 @@ IIS 10.0 Version 1709 HTTP Strict Transport Security (HSTS) Support
         <httpRedirect enabled="true" destination="https://contoso.com" httpResponseStatus="Permanent" />
         <httpProtocol>
             <customHeaders>
-                <add name="Strict-Transport-Security" value="max-age=31536000" />
+                <add name="Strict-Transport-Security" value="max-age=31536000; includeSubDomains; preload" />
             </customHeaders>
         </httpProtocol>
     </system.webServer>
