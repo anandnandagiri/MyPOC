@@ -31,7 +31,9 @@ Note: If using reverse proxy implement CORS policy in Web Application
     * Allow Only 443 Inbound Request
     * Enable DDOS Protection
 ```
-Note: Some firewalls you may need to enable outbound for 443 for response 
+Note: 
+1. Some firewalls you may need to enable outbound for 443 for response 
+2. Make Sure Your allowing TCP Protocol
 ```
 * #### Avoid Search Engine Crawl with robot.txt 
 * #### Web Application
