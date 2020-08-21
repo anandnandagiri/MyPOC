@@ -10,10 +10,10 @@ Go to Computer Configuration > Administrative Templates > Network > SSL Configur
 Double-click SSL Cipher Suite Order, and then click the Enabled option
 
 #### Enable TLS 1.2
-Run reg file which can [here](https://github.com/anandnandagiri/MyPOC/raw/master/ReadMe/reg/.NET4.0%20TLS.reg)
+Run reg file which can [here](https://github.com/anandnandagiri/MyPOC/raw/master/ReadMe/reg/TLS.reg)
 
 #### .NET 4.0 Framework Enable TLS 1.2
-Run reg file which can [here](https://github.com/anandnandagiri/MyPOC/raw/master/ReadMe/reg/TLS.reg)
+Run reg file which can [here](https://github.com/anandnandagiri/MyPOC/raw/master/ReadMe/reg/.NET4.0%20TLS.reg)
 
 #### Below is Cipher Suite
 ```
