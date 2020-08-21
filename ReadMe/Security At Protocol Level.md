@@ -5,7 +5,8 @@
 
 
 #### How to Enable Cipher Suite
-From the Group Policy Management Console, Go to Computer Configuration > Administrative Templates > Network > SSL Configuration Settings.
+From the Group Policy Management Console, (Run > GPEdit.msc)
+Go to Computer Configuration > Administrative Templates > Network > SSL Configuration Settings.
 Double-click SSL Cipher Suite Order, and then click the Enabled option
 
 #### Enable TLS 1.2
