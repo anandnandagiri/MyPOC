@@ -1,5 +1,18 @@
  Common Vulnerabilities and Exposures (CVE)
 
+#### Attack
+* DDOS 
+* Dictionary 
+* Brute force 
+* Phishing 
+* Keylogger 
+* Waterhole 
+* SQL Injections
+* Cross Site Scripts (XSS)
+* Cross Site Request Forgery
+* Insecure Deserializaion(remote code execution)
+* Improper Security Configuration
+
 #### Web Shell  
 * /usr/share/webshells/
 * RFI     Remote File Inclusion
