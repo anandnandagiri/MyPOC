@@ -1,3 +1,4 @@
+```
 string fileName = "Penguin.jpg";
 string pathName = "1/Penguin.jpg";
 CloudStorageAccount account = CloudStorageAccount.Parse("<your storage key>");
@@ -8,3 +9,4 @@ CloudBlob blob = container.GetBlobReference(pathName);
 var memoryStream = new MemoryStream();
 blob.DownloadToStream(memoryStream, null);
 return File(memoryStream.ToArray(), "application/octet-stream", fileName);
+```
