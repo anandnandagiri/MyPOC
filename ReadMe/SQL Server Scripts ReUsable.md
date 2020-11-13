@@ -14,6 +14,7 @@ localhost\MSSQLSERVER
 
 #### Dynamic Scripts Generate for Select top 1, Drop, Delete in a Table
 ```
+select 'SELECT  * from ' + name from sys.tables order by name
 select 'SELECT top 1 * from ' + name from sys.tables order by name
 select 'DROP TABLE [dbo].[' + name + ']'  from sys.tables order by name
 select 'DELETE from [dbo].[' + name + ']'  from sys.tables order by name
