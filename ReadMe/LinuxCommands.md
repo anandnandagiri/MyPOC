@@ -1,5 +1,7 @@
 	ls
 	ls myfile.exe
+	ls -R
+	ls -lt
 	ls -a
 	ls -a -h					#Show all hidden folders and files
 	ll							#more info like dir
