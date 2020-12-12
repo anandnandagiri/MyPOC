@@ -111,3 +111,27 @@ docker build -t <tag name> build .
 docker tag <image id> <hub username>/<repo name>
 docket push <hub username>/<repo name>
 ```
+
+#### TroubleShoot (Debug Mode) ASP.NET Core Application in alpine docker container
+```
+docker stop <container name>
+docker rm <container name>
+docker run -it --rm  --entrypoint=/bin/ash -p 8099:80 --name <container name> <Image>:latest
+
+cd app
+cat <<EOF > appsettings.Development.json
+{
+   "Logging": {
+    "LogLevel": {
+      "Default": "Trace",
+      "System": "Information",
+      "Microsoft": "Information"
+    }
+  }
+}
+EOF
+
+export ASPNETCORE_ENVIRONMENT="Development"
+echo $ASPNETCORE_ENVIRONMENT
+dotnet <your dll>
+```
