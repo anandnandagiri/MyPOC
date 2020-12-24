@@ -25,4 +25,5 @@ for /F "tokens=*" %1 in ('wevtutil.exe el') DO wevtutil.exe cl "%1
 #### DOS Command to kill node process
 ```
 taskkill /F /IM node.exe
+taskkill /IM "chrome.exe" /F
 ```
