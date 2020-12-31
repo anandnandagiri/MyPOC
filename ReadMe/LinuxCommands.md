@@ -102,6 +102,16 @@ cat /proc/cpuinfo
 ```
 seq 3 | xargs -P0 -n1 md5sum /dev/zero
 ```
+#### Memory Usage
+```
+ps -eo size,pid,user,command --sort -size | \
+    awk '{ hr=$1/1024 ; printf("%13.2f Mb ",hr) } { for ( x=4 ; x<=NF ; x++ ) { printf("%s ",$x) } print "" }' |\
+    cut -d "" -f2 | cut -d "-" -f1
+	
+ps -e -orss=,args= |awk '{print $1 " " $2 }'| awk '{tot[$2]+=$1;count[$2]++} END {for (i in tot) {print tot[i],i,count[i]}}' | sort -n	
+
+```
+
 #### Cron JOBs
 ```
 crontab -e
