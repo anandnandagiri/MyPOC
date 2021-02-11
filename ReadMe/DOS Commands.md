@@ -27,3 +27,9 @@ for /F "tokens=*" %1 in ('wevtutil.exe el') DO wevtutil.exe cl "%1
 taskkill /F /IM node.exe
 taskkill /IM "chrome.exe" /F
 ```
+#### DOS Command DateTime Format to variable
+```
+echo %date% %time%
+set sysdatetimeformat=%date:~10,4%%date:~4,2%%date:~7,2%_%time:~0,2%%time:~3,2%_%time:~6,2%%time:~9,2%
+echo %sysdatetimeformat%
+```
