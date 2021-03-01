@@ -43,13 +43,12 @@ dotnet watch run
 Most Used Create Table With Common Fields
 ```	
 CREATE TABLE [dbo].[MyTable] (
-    [ID]         INT   PRIMARY       IDENTITY (1, 1) NOT NULL,
+    [ID]         INT   IDENTITY (1, 1) PRIMARY KEY NOT NULL ,
     [Name]       VARCHAR (50) NULL,
     
     [Isactive]   BIT          DEFAULT ((1)) NOT NULL,
     [CreatedDate] DATETIME     DEFAULT (getdate()) NOT NULL,
-    [ModifiedDate] DATETIME   NULL,
-    PRIMARY KEY CLUSTERED ([ID] ASC),
+    [ModifiedDate] DATETIME   NULL,    
     //CONSTRAINT [FK_GData_ServiceID] FOREIGN KEY ([GServiceID]) REFERENCES [dbo].[GService] ([ID])
 );
 ```
