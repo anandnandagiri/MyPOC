@@ -127,4 +127,6 @@ ps ax | grep cron
 pgrep cron
 sudo /etc/init.d/cron start
 sudo service cron restart
+
+grep CRON /var/log/syslog
 ```
