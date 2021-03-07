@@ -104,6 +104,11 @@ Docker Copy From File From Image
 docker cp <container name or ID>:<Source File>  <Destination File>
 ```
 
+#### How To Auto Start Docker Container on VM Restart
+```
+docker run --restart always <Image>
+```
+
 #### How To Docker Container CPU/Memory/BlockIO/NetIO
 ```
 docker stats
