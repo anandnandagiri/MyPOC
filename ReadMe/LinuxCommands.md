@@ -117,7 +117,10 @@ ps -e -orss=,args= |awk '{print $1 " " $2 }'| awk '{tot[$2]+=$1;count[$2]++} END
 crontab -e
 	* * * * * /home/myfolder/cronjob.sh
 	* * * * * /bin/echo "cron works" >> /tmp/file
+
 cat /etc/crontab
+crontab -l
+crontab -r
 ```
 #### if your calling sh file from Cron Job, make sure below statements are included in custom shell script (.sh file) 
 ```
