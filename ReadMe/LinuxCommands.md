@@ -112,15 +112,24 @@ ps -e -orss=,args= |awk '{print $1 " " $2 }'| awk '{tot[$2]+=$1;count[$2]++} END
 
 ```
 
-#### Cron JOBs
+#### Cron JOBs [(Useful Site for configure CRON schedule)](https://crontab.guru/every-4-hours)
 ```
 crontab -e
-	SHELL=/bin/bash
-	PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/home/myfolder
 	* * * * * /home/myfolder/cronjob.sh
 	* * * * * /bin/echo "cron works" >> /tmp/file
 cat /etc/crontab
 ```
+#### if your calling sh file from Cron Job, make sure below statements are included in custom shell script (.sh file) 
+```
+#!/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/myfolder
+HOME=/root
+LOGNAME=root
+LANG=en_US.UTF-8
+SHELL=/bin/sh
+PWD=/root
+```
+
 #### Cron JOBS TroubleShoot
 ```
 ps ax | grep cron
