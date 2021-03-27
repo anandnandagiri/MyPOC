@@ -114,6 +114,14 @@ docker run --restart always <Image>
 docker stats
 ```
 
+#### How To Running Docker Container on different Port
+This sort of tricky that we need to commit changes to new container and then run new docker container
+```
+docker stop <sourcecontainer>
+docker commit <sourcecontainer> <destcontainer>
+docker run -p <hostport>:<containerport> -td <destcontainer>
+```
+
 #### How To Push Local Docker Image to Docker HUB
 ```
 docker login --username=<hub username>
