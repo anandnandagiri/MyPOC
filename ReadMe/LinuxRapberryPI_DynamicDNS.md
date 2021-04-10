@@ -7,8 +7,9 @@ curl https://<username>:<password>@domains.google.com/nic/update?hostname=<domai
 
 #### Raspberry PI Configure Headless
 This help connect using putty remotely without keyboard/monitor only power cable will be connected. Follow below setup
-* Assuming you have already 
-* Disconnect Raspberry PI
+* Assuming Raspberry PI already working as expected
+* Power Off Rasberry PI and Remove SSD
+* In SSD
 * create ssh file on Raspberry
 
 
