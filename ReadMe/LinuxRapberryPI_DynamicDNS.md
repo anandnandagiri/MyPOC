@@ -13,17 +13,16 @@ This help connect using putty remotely without keyboard/monitor only power cable
 * create ssh file on Raspberry boot image drive
 * create file wpa_supplicant.conf with below content
 ```
-country=US
+country=<Country Code Two char> eg: US
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 
 network={
-    ssid="NETWORK-NAME"
-    psk="NETWORK-PASSWORD"
+    ssid="<NETWORK-NAME>"
+    psk="<NETWORK-PASSWORD>"
 }
 ```
-
-
+* Insert SSD back to Raspberry PI
 
 #### Raspberry PI Host NGINX with Docker
 ```
