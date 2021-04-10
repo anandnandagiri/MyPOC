@@ -9,8 +9,19 @@ curl https://<username>:<password>@domains.google.com/nic/update?hostname=<domai
 This help connect using putty remotely without keyboard/monitor only power cable will be connected. Follow below setup
 * Assuming Raspberry PI already working as expected
 * Power Off Rasberry PI and Remove SSD
-* In SSD
-* create ssh file on Raspberry
+* Attach this SSD to computer
+* create ssh file on Raspberry boot image drive
+* create file wpa_supplicant.conf with below content
+```
+country=US
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+
+network={
+    ssid="NETWORK-NAME"
+    psk="NETWORK-PASSWORD"
+}
+```
 
 
 
