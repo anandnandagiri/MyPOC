@@ -130,6 +130,11 @@ docker tag <image id> <hub username>/<repo name>
 docket push <hub username>/<repo name>
 ```
 
+#### How to connect Docker PGAdmin Container to Docker Postgres Container where we are on WSL2 on Window
+```
+Host Name: host.docker.internal
+```
+
 #### TroubleShoot (Debug Mode) ASP.NET Core Application in alpine docker container
 ```
 docker stop <container name>
