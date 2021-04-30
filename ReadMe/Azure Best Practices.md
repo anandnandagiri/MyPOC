@@ -4,11 +4,11 @@ Below are most common Best Practices
 *  Use Azure KeyVault Service and Avoid Hard Code Connection String in Applications
 *  Use Azure Bastion Host Service for connecting Azure VM
 *  Use L7 Load Balance (eg: Application Gateway) instead of L3/L4 Load Balancer which has inbuilt Web Application Firewall for public facing web applications 
-*  First place to consider Azure VNET in Architectural Design, Enable DDOS Protection, use subnets and Plan IP addressing(CIDR Range)
+*  First place to consider Azure VNET in Architectural Design, Enable DDOS Protection, Design Logically segment Subnets and Plan IP addressing(CIDR Range)
 *  Enable and Configure Application Security Group on Azure VM.
 *  Enable HTTPS Only and Minimum TLS version 1.2 in Azure App Services (CORS if applicable)
 
-  [More On Azure Documentation](https://docs.microsoft.com/en-us/azure/security/fundamentals/best-practices-and-patterns)
+  
  	
 #### Performance
 *  Use L3/L4 Load Balancer for Web Service if hosted for internal VNET communication
@@ -34,6 +34,16 @@ Below are most common Best Practices
 	*  Slot 1:  Last Well Known Release
 	*  Slot 2:  Stage 
 	*  Slot 3:  Production
+*  Recommended to use API Gateway infront Azure Functions
 	
+#### Other Sources
+[Azure security best practices and patterns](https://docs.microsoft.com/en-us/azure/security/fundamentals/best-practices-and-patterns)
 
+[Azure best practices for network security](https://docs.microsoft.com/en-us/azure/security/fundamentals/network-best-practices)
+
+[Security best practices for IaaS workloads in Azure](https://docs.microsoft.com/en-us/azure/security/fundamentals/iaas)
+
+[Best practices for securing PaaS databases in Azure](https://docs.microsoft.com/en-us/azure/security/fundamentals/paas-applications-using-sql)
+
+[Azure Operational Security best practices](https://docs.microsoft.com/en-us/azure/security/fundamentals/operational-best-practices)
 
