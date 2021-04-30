@@ -31,9 +31,9 @@ Below are most common Best Practices
 #### General
 *  Recommended to use different Azure Subscription for Production Environment rather than Azure Resource Group
 *  Always Maintain 3 Deployment Slots in Azure App Service 
-	*  slot 1:  Last Well Known Release
-	*  slot 2:  Stage 
-	*  slot 3:  Production
+	*  Slot 1:  Last Well Known Release
+	*  Slot 2:  Stage 
+	*  Slot 3:  Production
 	
 
 
