@@ -6,6 +6,7 @@ Below are most common Best Practices
 *  Use L7 Load Balance (eg: Application Gateway) instead of L3/L4 Load Balancer which has inbuilt Web Application Firewall for public facing web applications 
 *  First place to consider Azure VNET in Architectural Design, Enable DDOS Protection, use subnets and Plan IP addressing(CIDR Range)
 *  Enable and Configure Application Security Group on Azure VM.
+*  Enable HTTPS Only and Minimum TLS version 1.2 in Azure App Services (CORS if applicable)
 
   [More On Azure Documentation](https://docs.microsoft.com/en-us/azure/security/fundamentals/best-practices-and-patterns)
  	
@@ -15,6 +16,7 @@ Below are most common Best Practices
 *  Use VNET Peering for connecting Multiple Location by using Azure Backbone network infrastructure
 *  Prefer Azure CDN for Static based Web Sites by deploying web pages to Azure Blob Storage
 *  Consider Azure SQL Elastic Pool if you’re having multiple Azure SQL Database for unexpected spike and balance Azure resource utilization
+*  Enable ARR (Application Request Routing) on Azure Load Balancer
 	
  	
 #### Cost Saving
@@ -26,8 +28,12 @@ Below are most common Best Practices
     * Use Non INTEL Processor(eg: AMD) based VM for Non - Production
     * Configure Auto Shutdown on Developer Machines
 		
-#### Other
+#### General
 *  Recommended to use different Azure Subscription for Production Environment rather than Azure Resource Group
+*  Always Maintain 3 Deployment Slots in Azure App Service 
+	*  slot 1:  Last Well Known Release
+	*  slot 2:  Stage 
+	*  slot 3:  Production
 	
 
 
