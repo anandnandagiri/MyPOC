@@ -4,7 +4,7 @@ Below are most common Best Practices
 *  Use Azure KeyVault Service and Avoid Hard Code Connection String in Applications
 *  Use Azure Bastion Host Service for connecting Azure VM
 *  Use L7 Load Balance (eg: Application Gateway) instead of L3/L4 Load Balancer which has inbuilt Web Application Firewall for public facing web applications 
-*  First place to consider Azure VNET in Architectural Design, Enable DDOS Protection and use subnets
+*  First place to consider Azure VNET in Architectural Design, Enable DDOS Protection, use subnets and Plan IP addressing(CIDR Range)
 *  Enable and Configure Application Security Group on Azure VM.
 
   [More On Azure Documentation](https://docs.microsoft.com/en-us/azure/security/fundamentals/best-practices-and-patterns)
