@@ -34,7 +34,7 @@ Below are most common Best Practices
 	*  Slot 1:  Last Well Known Release
 	*  Slot 2:  Stage 
 	*  Slot 3:  Production
-*  Recommended to use API Gateway infront Azure Functions
+
 	
 #### Other Sources
 [Azure security best practices and patterns](https://docs.microsoft.com/en-us/azure/security/fundamentals/best-practices-and-patterns)
