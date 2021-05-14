@@ -18,6 +18,7 @@ select 'SELECT  * from ' + name from sys.tables order by name
 select 'SELECT top 1 * from ' + name from sys.tables order by name
 select 'DROP TABLE [dbo].[' + name + ']'  from sys.tables order by name
 select 'DELETE from [dbo].[' + name + ']'  from sys.tables order by name
+select 'DROP PROC [dbo].[' + name + ']' from sysobjects where xtype='P'
 ```
 
 #### List All Database Tables Based On Column Name employeeID
