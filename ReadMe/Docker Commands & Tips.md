@@ -137,7 +137,8 @@ Host Name: host.docker.internal
 	
 #### How to volume mount WSL2 Windows Folder c:\MyFolder (Linux is case sensitive)
 ```
-docker run -v /mnt/c/MyFolder:/app -it --rm openjdk:8
+docker run -v /mnt/c/MyFolder:/app -it --rm openjdk:8   /*When you work with Linux*/
+docker run -v c:\MyFolder:/app -it --rm openjdk:8       /*When you work with Windows*/	
 ```	
 
 #### TroubleShoot (Debug Mode) ASP.NET Core Application in alpine docker container
