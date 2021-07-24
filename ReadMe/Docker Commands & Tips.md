@@ -125,7 +125,8 @@ docker run -p <hostport>:<containerport> -td <destcontainer>
 #### How To Push Local Docker Image to Docker HUB
 ```
 docker login --username=<hub username>
-docker build -t <tag name> build .
+docker -t <tag name> build . 				/*Remember . is also needed to copy */
+docker build -t <tag name> -f <file name> .   		/*Remember . is also needed to copy */
 docker tag <image id> <hub username>/<repo name>
 docket push <hub username>/<repo name>
 ```
