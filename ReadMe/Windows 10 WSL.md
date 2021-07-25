@@ -8,3 +8,9 @@ Note: Linux is case sensitive
 ```
 cd /mnt/c/Users/
 ```
+
+#### TroubleShoot 
+```
+wsl -l -v
+https://utf9k.net/blog/wsl2-vhd-issue/
+```
