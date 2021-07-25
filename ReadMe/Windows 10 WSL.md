@@ -12,5 +12,6 @@ cd /mnt/c/Users/
 #### TroubleShoot 
 ```
 wsl -l -v
+wsl.exe --set-version <linux distro> 2
 https://utf9k.net/blog/wsl2-vhd-issue/
 ```
