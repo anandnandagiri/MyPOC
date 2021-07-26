@@ -142,3 +142,19 @@ sudo service cron restart
 
 grep CRON /var/log/syslog
 ```
+
+#### Linux IP Command
+```
+ip addr show
+ip addr add 192.168.1.5 dev eth1
+ip addr del 192.168.1.5/24 dev eth1
+ip link set eth1 up
+ip link set eth1 down
+ip route show
+ip route add 10.10.20.0/24 via 192.168.1.100 dev eth0
+ip route add default via 192.168.1.100
+ip route del 10.10.20.0/24
+cat /etc/network/interfaces
+```
+
+
