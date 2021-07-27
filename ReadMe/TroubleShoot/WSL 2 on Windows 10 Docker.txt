@@ -1,0 +1,78 @@
+Fixed WSL2 Issues to use docker integrated with debian Window Store APP and apt update not works due to IP issues
+
+Prerequisite
+	1. WSL 2 on Windows 10
+	2. Docker Desktop
+	3. Debian Windows Store Apps
+
+
+Challenges Faced
+
+	1. Integrating Docker into Debian
+	2. By default debian package are beeing compressed because of space or enabled compress (https://utf9k.net/blog/wsl2-vhd-issue/)
+	3. After integration Docker Command PULL is working fine but apt update is not working
+	4. In Window 10 Ethernet WSL is getting dynamic IP
+	5. Debian is not getting Ethernet Up once restart
+	6. Understanding /etc/resolv.conf, /etc/wsl.conf
+	7. Learning IP Linux Command Since ifconfig is not available in debian windows store app (After fix install thru net-tools)
+	8. Understanding Assigned IP Address, Subnetmask needs to convert to CIDR (which play major role in fixing issue)
+
+
+Commands used during Troubleshooting....
+
+	Debian Packages Path --> %LOCALAPPDATA%/packages/
+	apt-get install net-tools   /* This will install Ifconfig which is missing in Debian Windows App*/
+
+
+	wsl --shutdown
+
+	ip route add default via 172.18.35.33
+	ip route add default via 192.168.147.129 dev eth0
+	ip route add 192.168.147.129 dev eth0
+
+
+	nano /etc/resolv.conf
+	nameserver 8.8.8.8
+
+	nano /etc/wsl.conf
+	[network]
+	generateResolvConf = false
+
+
+	Enable Ethernet and DCHP Client assign IP
+		ip link set dev eth0 up
+		dhclient -v eth0
+
+
+	ip addr add 172.25.176.46/20 dev eth0
+	default via 172.25.176.1 dev eth0
+
+
+Anand Remote VM which is working fine.... To Troubleshoot compared with not working machince 
+
+	cat /etc/resolv.conf
+	nameserver 172.25.176.1
+
+	ip a
+	inet 172.25.176.46/20 brd 172.25.191.255 scope global eth0
+
+	ip r
+	default via 172.25.176.1 dev eth0
+	172.25.176.0/20 dev eth0 proto kernel scope link src 172.25.176.46
+
+
+
+-------------------------Below Resolved Issue-------------------------
+
+Instruction:
+	1. You need to know IP address to assign
+	2. You need know the subnetmask to execute below commands
+
+
+172.17.173.161
+
+ip link set dev eth0 up
+ip addr add 172.17.173.163/28 dev eth0
+ip r add default via 172.17.173.161 dev eth0
+
+
