@@ -1,5 +1,17 @@
+# Windows
+#### Set Environment Variables (Windows not Case Sensitive)
+```
+set NAME=%path%
+echo %name%
 ```
 
+#### Display all Environment Variables starts with p
+```
+set p
+```
+
+#### Windows Predfined Enviroment Variables
+```
 %AppData%
 %temp%
 %userprofile%
@@ -11,3 +23,4 @@ shell:startup               /* Command to open startup folder of user */
 
 %LOCALAPPDATA%/packages/   /* Dedian/Ubuntu Windows App Package Folder */
 ```
+# Linux
