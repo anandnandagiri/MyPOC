@@ -4,6 +4,10 @@
 set NAME=%path%
 echo %name%
 ```
+#### Display all Environment Variables
+```
+set
+```
 
 #### Display all Environment Variables starts with p
 ```
