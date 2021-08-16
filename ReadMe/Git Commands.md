@@ -36,6 +36,7 @@ git commit -m "Initial Check IN"
 Push to GitHub
 ```
 git push --all
+git push <branchname>
 ```
 
 Pull latest code from GitHub
@@ -64,6 +65,13 @@ remote: Repository not found.
 ```
 git remote rm origin
 git remote add origin  https://USERNAME:PASSWORD@github.com/username/reponame.git
+
+--Token Based
+git remote set-url origin https://<token>@github.com/username/reponame
+git remote set-url <branchname> https://<token>@github.com/username/reponame
+
+git push <branchname>
+git push --all
 ```
 Above didn't Solved
 Goto Control Panel\All Control Panel Items\Credential Manager clear all the credential stored
