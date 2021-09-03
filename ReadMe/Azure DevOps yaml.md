@@ -3,6 +3,25 @@
 D:\a\1\a      $(Build.ArtifactStagingDirectory)
 D:\a\1\s      $(Build.SourcesDirectory)
 ```
+#### YAML Explicit Variable declarations
+```
+trigger:
+- none
+
+jobs:
+- job: Phase_1
+  displayName: Phase 1
+  cancelTimeoutInMinutes: 1
+  pool:
+    vmImage: vs2017-win2016
+  variables:  
+    BuildPlatform: 'AnyCPU'
+    BuildConfiguration: 'Release'
+  steps:
+  - checkout: self
+  - task: PowerShell@2
+```
+
 #### MSBuild Commonly used parameter
 ```
 /p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.artifactstagingdirectory)\\"
