@@ -13,7 +13,8 @@ D:\a\1\s      $(Build.SourcesDirectory)
 ```
   - task: PowerShell@2
     inputs:
-      targetType: 'inline'
+      targetType: 'inline'.
+      enabled: true
       script: |        
        echo "$(Build.SourcesDirectory)`r`n$(Build.ArtifactStagingDirectory)`r`n$(System.DefaultWorkingDirectory)"
        Get-ChildItem -Path $(Build.SourcesDirectory) -Recurse
