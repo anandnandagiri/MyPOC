@@ -122,4 +122,12 @@ WHERE database_id = DB_ID('AdventureWorks')
 GROUP BY database_id, t.name,t.create_date,t.modify_date
 ORDER BY SUM(ius.user_seeks + ius.user_scans + ius.user_lookups) desc
 ```
+#### Sys View
+```
+SELECT DB_NAME(dbid) as DBName,COUNT(dbid) as NumberOfConnections,loginame as LoginName,program_name,hostname,status,lastwaittype,cpu,physical_io,memusage,cmd FROM sys.sysprocesses
+WHERE dbid > 0 GROUP BY dbid, loginame,program_name,hostname,status,lastwaittype,cpu,physical_io,memusage,cmd
 
+SELECT max_workers_count,socket_count,cores_per_socket,numa_node_count,cpu_count FROM sys.dm_os_sys_info
+select * from sys.sysprocesses WHERE dbid > 0
+
+```
