@@ -1,4 +1,5 @@
 ## This will be helpfull when you debug with chrome 
+Nice URL for List of Chromium Command Line Switches [Click Here](https://peter.sh/experiments/chromium-command-line-switches)
 
 #### Chrome Installation Path
 ```
