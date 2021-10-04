@@ -131,3 +131,24 @@ SELECT max_workers_count,socket_count,cores_per_socket,numa_node_count,cpu_count
 select * from sys.sysprocesses WHERE dbid > 0
 
 ```
+
+#### SQL Server User Log-in
+```
+---Execute On Master Table
+DROP LOGIN [<UserLoginName>] 
+GO
+CREATE LOGIN [<UserLoginName>]  WITH PASSWORD=N'<Your Password>'
+GO
+ALTER LOGIN [<UserLoginName>]  Enable
+GO
+
+--Execute on DB
+DROP USER [<UserLoginName>]
+GO
+
+CREATE USER [<UserLoginName>] FOR LOGIN [<UserLoginName>] WITH DEFAULT_SCHEMA=[dbo]
+GO
+
+GRANT SELECT ON SCHEMA :: [dbo] TO [<UserLoginName>]
+GO
+```
