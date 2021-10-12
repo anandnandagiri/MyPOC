@@ -1,16 +1,34 @@
 # ReadMe Git Commands
 
+Get Git Help On Commands
+```
+git -help
+git clone -help
+git help -a
+git help mv
+```
+VS 2019 Git Installed Path
+```
+c:\program files (x86)\microsoft visual studio\2019\enterprise\common7\ide\commonextensions\microsoft\teamfoundation\team explorer\Git\mingw32\bin\git.exe
+cd c:\program files (x86)\microsoft visual studio\2019\enterprise\common7\ide\commonextensions\microsoft\teamfoundation\team explorer\Git\mingw32\bin\
+```
+Global Git Config Path
+```
+%userprofile%/.gitconfig
+```
+Set Path in Command Prompt
+```
+set path=%path%;c:\program files (x86)\microsoft visual studio\2019\enterprise\common7\ide\commonextensions\microsoft\teamfoundation\team explorer\Git\mingw32\bin\
+```
 Clone Git to your local
 ```
 git clone https://github.com/anandnandagiri/MyPOC.git
 ```
 
-Get Git Help On Commands
+Clone Git to your local based on Branch
 ```
-git -help
-git clone -help
+git clone -b <branch> https://github.com/anandnandagiri/MyPOC.git
 ```
-
 Get Git Config
 ```
 git config --list --show-origin
@@ -43,7 +61,14 @@ Pull latest code from GitHub
 ```
 git pull
 ```
-
+Other Git Usefull Commands
+```
+git branch
+git clone -b <branch Name> <Git URL>
+git mv <source folder> <destination folder>
+git rm -r .
+git remote rm origin
+```
 Private Repository to add/set-url remote or clone
 ```
 git remote add <some remote name> https://<USERNAME>:<PASSWORD>@github.com/anandnandagiri/MyPOC.git
@@ -102,3 +127,6 @@ Add Git Ignore File(On Windows OS)
         ```
         ren ignore.txt .gitignore
         ```
+## Git Tools
+
+* Source Tree
