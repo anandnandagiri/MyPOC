@@ -60,6 +60,7 @@ git push <branchname>
 Pull latest code from GitHub
 ```
 git pull
+git pull origin master  //This helps in resolving pull request conflict in local. Once resolved on local push to remote git <branch>
 ```
 Other Git Usefull Commands
 ```
