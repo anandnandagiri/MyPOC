@@ -152,3 +152,13 @@ GO
 GRANT SELECT ON SCHEMA :: [dbo] TO [<UserLoginName>]
 GO
 ```
+#### SQL Server Change User Log-in Password
+```
+GO
+ALTER LOGIN [sa] WITH DEFAULT_DATABASE=[master]
+GO
+USE [master]
+GO
+ALTER LOGIN [sa] WITH PASSWORD=N'NewPassword'
+GO
+```
