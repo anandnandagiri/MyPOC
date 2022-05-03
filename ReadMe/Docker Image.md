@@ -1,3 +1,14 @@
+#### Microsoft
+```
+docker pull mcr.microsoft.com/mssql/server
+```
+
+#### Open Source DB
+```
+docker pull postgres
+docker pull mariadb
+```
+
 #### Jupyter Notes
 ```
 docker pull jupyter/tensorflow-notebook
