@@ -21,6 +21,11 @@ select 'DELETE from [dbo].[' + name + ']'  from sys.tables order by name
 select 'DROP PROC [dbo].[' + name + ']' from sysobjects where xtype='P'
 ```
 
+#### Convert
+```
+select name,convert(varchar(50),dob,106) from empDemography order by dob,name
+```
+
 #### List All Database Tables Based On Column Name employeeID
 ```
 select   tab.name, col.name
