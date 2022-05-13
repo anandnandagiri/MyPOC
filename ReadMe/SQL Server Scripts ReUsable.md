@@ -23,7 +23,7 @@ select 'DROP PROC [dbo].[' + name + ']' from sysobjects where xtype='P'
 
 #### Convert
 ```
-select name,convert(varchar(50),dob,106) from empDemography order by dob,name
+select name,convert(varchar(50),dob,106) from empDemography order by month(dob),day(dob),name
 ```
 
 #### List All Database Tables Based On Column Name employeeID
