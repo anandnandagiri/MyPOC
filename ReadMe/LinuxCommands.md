@@ -17,6 +17,7 @@
 	popd	
 	which
 	usermode
+	find / -type f -name index.html
 
 
 Remove ALL Sub Folder forcefully
