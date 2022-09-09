@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SQLite", "SQLite\SQLite.csproj", "{66425E54-A248-4BEA-85E3-E5FF8EF78D81}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{14EF769A-EE59-4A6A-B097-DDC15D6F0400}"
+	ProjectSection(SolutionItems) = preProject
+		Docs\Dockerfile = Docs\Dockerfile
+		Docs\ReadMeDotnet.txt = Docs\ReadMeDotnet.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{71782DE9-F83C-43AC-A3CE-27AF81DCF0A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66425E54-A248-4BEA-85E3-E5FF8EF78D81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66425E54-A248-4BEA-85E3-E5FF8EF78D81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66425E54-A248-4BEA-85E3-E5FF8EF78D81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66425E54-A248-4BEA-85E3-E5FF8EF78D81}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{66425E54-A248-4BEA-85E3-E5FF8EF78D81} = {71782DE9-F83C-43AC-A3CE-27AF81DCF0A3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F985CDB-E6FA-43BA-B49A-D627070AF919}
+	EndGlobalSection
+EndGlobal
