@@ -31,17 +31,6 @@ INNER JOIN sys.default_constraints dc ON st.object_id = dc.parent_object_id
 INNER JOIN sys.columns co ON dc.parent_object_id = co.object_id AND co.column_id = dc.parent_column_id
 WHERE co.Name = 'IsActive'
 
-SELECT
-st.Name as [TableName],
-co.Name as [ColumnName] ,
-dc.Name as  [ConstraintName],
-dc.definition as [Definition],
-'alter table ' + st.Name + ' add constraint ' + dc.name as [SQL]
-FROM sys.tables st
-INNER JOIN sys.default_constraints dc ON st.object_id = dc.parent_object_id
-INNER JOIN sys.columns co ON dc.parent_object_id = co.object_id AND co.column_id = dc.parent_column_id
-WHERE co.Name = 'IsActive'
-
 ```
 
 #### Convert
