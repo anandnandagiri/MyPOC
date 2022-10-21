@@ -20,6 +20,12 @@ select 'DROP TABLE [dbo].[' + name + ']'  from sys.tables order by name
 select 'DELETE from [dbo].[' + name + ']'  from sys.tables order by name
 select 'DROP PROC [dbo].[' + name + ']' from sysobjects where xtype='P'
 
+select 'Alter table ' +  tab.name + ' drop column ' + col.name
+from sys.columns col
+inner join sys.tables tab
+on col.object_id = tab.object_id
+where col.name like '%test%'
+
 SELECT
 st.Name as [TableName],
 co.Name as [ColumnName] ,
