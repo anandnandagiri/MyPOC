@@ -33,3 +33,8 @@ echo %date% %time%
 set sysdatetimeformat=%date:~10,4%%date:~4,2%%date:~7,2%_%time:~0,2%%time:~3,2%_%time:~6,2%%time:~9,2%
 echo %sysdatetimeformat%
 ```
+#### List All TCP Port Open
+```
+netstat -ano -p tcp
+```
+
