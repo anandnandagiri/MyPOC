@@ -145,7 +145,14 @@ Host Name: host.docker.internal
 ```
 docker run -v /mnt/c/MyFolder:/app -it --rm openjdk:8   /*When you work with Linux*/
 docker run -v c:\MyFolder:/app -it --rm openjdk:8       /*When you work with Windows*/	
-```	
+```
+	
+#### How to volume mount with current directory
+```
+docker run --rm -it -v %cd%:/app node  /*Windows Command Prompt*/
+docker run --rm -it -v ${PWD}:/app node /*Windows Powershell */
+docker run --rm -it -v $(pwd):/app node  /*Linux based*/
+```
 
 #### TroubleShoot (Debug Mode) ASP.NET Core Application in alpine docker container
 ```
