@@ -5,7 +5,7 @@ namespace HTMLMinifer
 {
     public static class HTML
     {
-        public static void Init()
+        public static void Init(string fext)
         {
             Console.WriteLine("Minifier for HTML files...");
             Console.WriteLine("");
@@ -27,14 +27,14 @@ namespace HTMLMinifer
                 Sb.Replace(Sb.ToString(), Regex.Replace(Sb.ToString(), @"<!--.*?-->", ""));
 
                 //Remove Tab
-                Sb.Replace("\t", "");
+                Sb.Replace(Sb.ToString(), Regex.Replace(Sb.ToString(), @"[\t]", ""));
 
                 //Remove New Line
-                Sb.Replace(Environment.NewLine, "");
+                //Sb.Replace(Environment.NewLine, "");
+                Sb.Replace(Sb.ToString(), Regex.Replace(Sb.ToString(), @"[\r\n]", ""));
 
-
-                File.WriteAllText($"{f.ToString()}", Sb.ToString());
-                fi = new FileInfo($"{f.ToString()}");
+                File.WriteAllText($"{f.ToString()}{fext}", Sb.ToString());
+                fi = new FileInfo($"{f.ToString()}{fext}");
                 int afi = Convert.ToInt32($"{fi.Length / 1024}");
                 Console.WriteLine($"{fi.Name.ToString()} ... {bfi} KB: {afi} KB");
                 btfi = btfi + bfi;

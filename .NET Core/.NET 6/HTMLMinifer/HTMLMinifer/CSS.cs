@@ -5,7 +5,7 @@ namespace HTMLMinifer
 {
     public static class CSS
     {
-        public static void Init()
+        public static void Init(string fext)
         {
             Console.WriteLine("");
             Console.WriteLine("Minifier for CSS files...");
@@ -23,11 +23,10 @@ namespace HTMLMinifer
 
                 //Remove New Line
                 //Sb.Replace(Environment.NewLine, "");
-                Sb.Replace(Sb.ToString(), Regex.Replace(Sb.ToString(), @"[\r\n]", " "));            
-                //Sb.Replace("\\s", "");
-                ////Remove Tab
-                //Sb.Replace("\\t", "");
-                //Sb.Replace("\\n", "");
+                Sb.Replace(Sb.ToString(), Regex.Replace(Sb.ToString(), @"[\r\n]", " "));
+
+                //Remove Tab
+                Sb.Replace(Sb.ToString(), Regex.Replace(Sb.ToString(), @"[\t]", ""));
 
                 //Remove Comments                
                 Sb.Replace(Sb.ToString(), Regex.Replace(Sb.ToString(), @"/\*.*?\*/", ""));
@@ -38,19 +37,19 @@ namespace HTMLMinifer
                 Sb.Replace(Sb.ToString(), Regex.Replace(Sb.ToString(), @"}\s+", "}"));
                 Sb.Replace(Sb.ToString(), Regex.Replace(Sb.ToString(), @"\s+}", "}"));
                 Sb.Replace(Sb.ToString(), Regex.Replace(Sb.ToString(), @":\s+", ":"));
+                Sb.Replace(Sb.ToString(), Regex.Replace(Sb.ToString(), @"\s+:", ":"));
                 Sb.Replace(Sb.ToString(), Regex.Replace(Sb.ToString(), @";\s+", ";"));
                 Sb.Replace(Sb.ToString(), Regex.Replace(Sb.ToString(), @"\s+;", ";"));
                 Sb.Replace(Sb.ToString(), Regex.Replace(Sb.ToString(), @"\s+,", ","));
                 Sb.Replace(Sb.ToString(), Regex.Replace(Sb.ToString(), @",\s+", ","));
                 Sb.Replace(Sb.ToString(), Regex.Replace(Sb.ToString(), @"{\s+}", "{}"));
 
-                File.WriteAllText($"{f.ToString()}", Sb.ToString());
-                fi = new FileInfo($"{f.ToString()}");
+                File.WriteAllText($"{f.ToString()}{fext}", Sb.ToString());
+                fi = new FileInfo($"{f.ToString()}{fext}");
                 int afi = Convert.ToInt32($"{fi.Length / 1024}");
                 Console.WriteLine($"{fi.Name.ToString()} ... {bfi} KB: {afi} KB");
                 btfi = btfi + bfi;
-                affi = affi + afi;
-                //Console.WriteLine(Regex.Replace(Sb.ToString(), @">\s+<", "><"));   
+                affi = affi + afi;                
             }
             Console.WriteLine("");
             Console.WriteLine($" Total Before File Size {btfi} KB");

@@ -4,8 +4,9 @@
 using HTMLMinifer;
 using System.ComponentModel.Design.Serialization;
 
-HTML.Init();
+string fileext = "";
 
-CSS.Init();
+HTML.Init(fileext);
+CSS.Init(fileext);
 
 Console.WriteLine(""); Console.WriteLine("");
