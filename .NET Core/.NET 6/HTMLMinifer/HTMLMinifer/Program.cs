@@ -8,5 +8,6 @@ string fileext = "";
 
 HTML.Init(fileext);
 CSS.Init(fileext);
+JS.Init(fileext);
 
 Console.WriteLine(""); Console.WriteLine("");
