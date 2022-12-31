@@ -25,6 +25,7 @@ namespace HTMLMinifer
                 //This is tricky to handle // comments since https:// string may have issues
                 //So check any space before it and then replace it.
                 Sb.Replace(Sb.ToString(), Regex.Replace(Sb.ToString(), @"\s+//.*", ""));
+                Sb.Replace(Sb.ToString(), Regex.Replace(Sb.ToString(), @"^//.*", ""));
 
                 //Remove Console.log();
                 Sb.Replace(Sb.ToString(), Regex.Replace(Sb.ToString(), @"console.log\(.*\);", ""));
