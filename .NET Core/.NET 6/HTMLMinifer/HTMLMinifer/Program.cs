@@ -6,6 +6,8 @@ using System.ComponentModel.Design.Serialization;
 
 string fileext = "";
 
+//fileext = ".min";
+
 HTML.Init(fileext);
 CSS.Init(fileext);
 JS.Init(fileext);

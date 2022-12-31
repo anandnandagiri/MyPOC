@@ -22,12 +22,16 @@ namespace HTMLMinifer
                 int bfi = Convert.ToInt32($"{fi.Length / 1024}");
 
                 //Remove Comments                
-                Sb.Replace(Sb.ToString(), Regex.Replace(Sb.ToString(), @"//.*", ""));
+                //This is tricky to handle // comments since https:// string may have issues
+                //So check any space before it and then replace it.
+                Sb.Replace(Sb.ToString(), Regex.Replace(Sb.ToString(), @"\s+//.*", ""));
 
-
+                //Remove Console.log();
+                Sb.Replace(Sb.ToString(), Regex.Replace(Sb.ToString(), @"console.log\(.*\);", ""));
 
                 //Remove New Line
                 //Sb.Replace(Environment.NewLine, "");
+                //This is tricky to handle newline. Below code should be before other comments and spaces
                 Sb.Replace(Sb.ToString(), Regex.Replace(Sb.ToString(), @"[\r\n]", " "));
 
                 //Remove Tab
