@@ -3,13 +3,31 @@
 
 using HTMLMinifer;
 using System.ComponentModel.Design.Serialization;
+using System.Runtime.CompilerServices;
 
 string fileext = "";
-
 //fileext = ".min";
 
-HTML.Init(fileext);
-CSS.Init(fileext);
-JS.Init(fileext);
+var ignorehml = Environment.GetCommandLineArgs().Where(c => c.ToString().ToLower() == "ignorehtml").ToList();
+if (ignorehml.Count == 0)
+{
+    HTML.Init(fileext);
+}
+
+var ignorecss = Environment.GetCommandLineArgs().Where(c => c.ToString().ToLower() == "ignorecss").ToList();
+if (ignorecss.Count == 0)
+{
+    CSS.Init(fileext);
+}
+
+
+var ignoreJS = Environment.GetCommandLineArgs().Where(c => c.ToString().ToLower() == "ignorejs").ToList();
+if (ignoreJS.Count==0)
+{
+    JS.Init(fileext);
+}
+
 
 Console.WriteLine(""); Console.WriteLine("");
+
+ 
