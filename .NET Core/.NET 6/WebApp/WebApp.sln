@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{B10081FA-6047-4E2C-82FE-C312B7C5F796}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6945D076-211F-4503-9DFC-0AE71BE96A93}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{FC65D5E6-BEA5-4839-86C0-CB2F3D726587}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+		build.bat = build.bat
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B10081FA-6047-4E2C-82FE-C312B7C5F796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B10081FA-6047-4E2C-82FE-C312B7C5F796}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B10081FA-6047-4E2C-82FE-C312B7C5F796}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B10081FA-6047-4E2C-82FE-C312B7C5F796}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B10081FA-6047-4E2C-82FE-C312B7C5F796} = {6945D076-211F-4503-9DFC-0AE71BE96A93}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E730829-EF04-4500-8A2E-7494609340E3}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,11 @@
+.vs/
+Configs
+DBBackup
+Docs
+SampleData
+SQLScripts
+**/Obj/
+**/obj/
+**/bin/
+**/Bin/
+**/.local-chromium/
