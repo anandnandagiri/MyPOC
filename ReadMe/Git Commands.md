@@ -7,10 +7,11 @@ git clone -help
 git help -a
 git help mv
 ```
-VS 2019 Git Installed Path
+VS 2019 Enterprise /2022 Community Git Installed Path
 ```
 c:\program files (x86)\microsoft visual studio\2019\enterprise\common7\ide\commonextensions\microsoft\teamfoundation\team explorer\Git\mingw32\bin\git.exe
 cd c:\program files (x86)\microsoft visual studio\2019\enterprise\common7\ide\commonextensions\microsoft\teamfoundation\team explorer\Git\mingw32\bin\
+cd C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\Git\mingw64\bin
 ```
 Global Git Config Path
 ```
