@@ -1,0 +1,34 @@
+
+JavaScript Single Page Application Building
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Single Page Application Example</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="loadPage('home')">Home</a></li>
+                <li><a href="#" onclick="loadPage('about')">About</a></li>
+                <li><a href="#" onclick="loadPage('contact')">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="content">
+            <!-- Content will be loaded dynamically here -->
+        </div>
+        <script>
+            function loadPage(pageName) {
+                // Send an asynchronous request to the server for the page content
+                fetch(`${pageName}.html`)
+                    .then(response => response.text())
+                    .then(html => {
+                        // Update the content div with the new HTML
+                        document.querySelector('#content').innerHTML = html;
+                    });
+    }
+            // Load the home page by default
+            loadPage('home');
+        </script>
+    </body>
+</html>
