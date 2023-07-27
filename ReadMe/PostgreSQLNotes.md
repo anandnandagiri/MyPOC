@@ -1,6 +1,8 @@
 #### Important Stats View
 ```
-SELECT * FROM pg_stat_database 
+SELECT * FROM pg_stat_database
+```
+```
 SELECT * FROM pg_statio_user_tables;
 SELECT * FROM pg_stat_bgwriter;
 SELECT locktype, database, relation::regclass, mode, pid FROM pg_locks;
