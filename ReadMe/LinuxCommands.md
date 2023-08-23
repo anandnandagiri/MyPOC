@@ -1,52 +1,56 @@
-	ls
+ Find OS Version
+--------------------------
+	lsb_release -a
+	uname -r
+	arch
+ 
+User/Group/Permission
+--------------------------------
+	id
+ 	groups
+	whoami
+
+Once after first Linux Boot and periodically update
+------------------------------------------------
+	sudo apt-get update && sudo apt-get upgrade
+	sudp apt-get dist-update //Not Every Time we need to use this. This will remove old and update with new version 
+
+	
+Add User Commands and permission
+--------------------------------------
+	sudo usermod -aG sudo $USER    (adding user to sudo group)
+	sudo chown $USER:sudo /root -R (adding user to access permission for files) 
+	or
+	sudo chown -R $USER:$USER /var/www/example.com/public_html
+	sudo usermod -aG docker $USER (This will add user to run docker in sudo mode)
+	Don't want sudo every time use command sudo -s
+ 
+
+Common Commands
+--------------------------------
+ 	ls
 	ls myfile.exe
 	ls -R
 	ls -lt
 	ls -a
 	ls -a -h					#Show all hidden folders and files
-	ll							#more info like dir
+	ls -al dotnet
+ 	ll							#more info like dir
 	nano						#Edit
 	cat 						#Type
 	cd 
 	mkdir
-	hostname
-	whoami
-	ls -al dotnet
+	hostname	
 	pwd
 	ll | more
 	popd	
 	which
-	usermode
 	find / -type f -name index.html
 
 
 Remove ALL Sub Folder forcefully
 --------------------------------
 	sudo rm -rf dotnet
-
-
-Find Version
---------------------------
-	lsb_release -a
-	uname -r
-	arch
-
-First Command Once Installed
---------------------------------------------
-	sudo apt-get update && sudo apt-get upgrade
-	sudp apt-get dist-update //Not Every Time we need to use this. This will remove old and update with new version 
-
-	
-Second Add User Commands
---------------------------------------
-	sudo usermod -aG sudo $USER    (adding user to sudo group)
-	sudo chown $USER:sudo /root -R (adding user to access permission for files) 
-	or
-	sudo chown -R $USER:$USER /var/www/example.com/public_html
-
-	sudo usermod -aG docker $USER (This will add user to run docker in sudo mode)
-
-	Don't want sudo every time use command sudo -s
 
 	
 #### Create Batch File
@@ -67,7 +71,6 @@ sudo apt-get purge packagename
 sudo apt-get remove packagename
 sudo apt-get autoremove
 sudo aptitude remove packagename (Orphand packages)
-
 
 cat /lib/systemd/system/nginx.service
 
