@@ -177,3 +177,4 @@ export ASPNETCORE_ENVIRONMENT="Development"
 echo $ASPNETCORE_ENVIRONMENT
 dotnet <your dll>
 ```
+#### Default Location of Docker Desktop WSL2 Disk Image C:\Users\<user>\AppData\Local\Docker\wsl
