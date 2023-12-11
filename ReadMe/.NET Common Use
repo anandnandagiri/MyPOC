@@ -1,6 +1,0 @@
-#### Dotnet CLI Tools
-```
-dotnet tool list
-dotnet tool search
-dotnet tool install --global dotnet-ef
-```
