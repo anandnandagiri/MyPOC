@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Documentation</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+        body {
+            background-color: #e2cfd2;
+            font-size: 20px;
+            color: white;
+        }
+
+        h5 {
+            color: black;
+            display: contents;
+        }
+
+        .btn {
+            border: 2px solid transparent;
+            border-radius: 1rem;
+            font-size: 1rem;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            font-size: 1rem;
+			padding:1px 15px 1px 15px ;
+			box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.39)
+        }
+
+        .btnsmall {
+            border: none;
+            font-size: 0.8rem;
+			padding:0px 10px 0px 10px ;
+        }
+
+        .btn-primary {
+            background-color: deeppink;
+            border-color: deeppink;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid mt-1">
+<div class="row ml-3">
+<div class="col-md-9">
+<div id="headers"></div>
+</div>
+<div class="col-md-3">
+<div id="slider"></div>
+</div>
+</div>
+</div>
+<div class="container-fluid mt-1">
+<div class="row ml-3">
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+	//{ "label": "", "url": "" },
+        var headerData = {
+            "headers": [		
+				{
+                    "title": "AI GitHub",
+                    "links": [
+						//{ "label": "", "url": "" },
+                        { "label": "langchain", "url": "https://github.com/langchain-ai/langchain/tree/master" },
+						{ "label": "ollama", "url": "https://github.com/jmorganca/ollama" },
+						{ "label": "GPT4ALL", "url": "https://github.com/nomic-ai/gpt4all" },
+						{ "label": "ONNX Runtime", "url": "https://github.com/microsoft/onnxruntime" },						
+                    ]
+                }, 			
+				{
+                    "title": "AI Tools DB",
+                    "links": [
+						{ "label": "Future Tools", "url": "https://www.futuretools.io/" },						
+                        { "label": "An AI", "url": "https://theresanaiforthat.com/" },
+						{ "label": "Humans", "url": "https://www.toolsforhumans.ai/" },	
+						{ "label": "FYI", "url": "https://aitools.fyi/" },	
+						{ "label": "Futurepedia", "url": "https://www.futurepedia.io/" },							
+                    ]
+                },
+                {
+                    "title": "AI Image/Video Tools",
+                    "links": [
+					    {"label": "Adobe Firefly", "url": "https://firefly.adobe.com/upload/inpaint#"},
+						{ "label": "Canvas", "url": "https://www.canva.com" },
+					    {"label": "Increase Resolution", "url": "https://replicate.com/mv-lab/swin2sr"},
+						{"label": "Cutout.Pro", "url": "https://www.cutout.pro/"},
+						{"label": "flairAI display product", "url": "https://flair.ai/"},
+						{"label": "remini ai", "url": "https://remini.ai/"},	
+                    ]
+                },
+				{
+                    "title": "AI WebSite Builder Tools",
+                    "links": [
+					    {"label": "CodeDesign.ai", "url": "https://codedesign.ai/"},
+					    {"label": "0Web", "url": "https://10web.io/"},						
+                    ]
+                },
+				{
+                    "title": "AI Tools",
+                    "links": [												 						    				
+					    {"label": "Coral Google TPU", "url": "https://coral.ai/products/"},
+					    {"label": "Cuebric", "url": "https://cuebric.com/"},
+					    {"label": "Lensa - Prisma Labs", "url": "https://prisma-ai.com/lensa"},
+					    {"label": "Avatar Maker", "url": "https://avatarmaker.com/"},
+						{"label": "Youtube Summary", "url": "https://vidrapid.com/"},	
+                    ]
+                },
+				{
+                    "title": "Youtube Links",
+                    "links": [
+                      	{ "label": "seaborn", "url": "https://www.youtube.com/watch?v=ooqXQ37XHMM" },						
+                    ]
+                },
+              
+            ]
+        };
+
+		 var sliderData = {
+            "headers": [
+				{
+                    "title": "AI Platforms",
+                    "links": [
+						{ "label": "huggingface", "url": "https://huggingface.co/" },
+						{ "label": "kaggle", "url": "https://www.kaggle.com/" },
+						//{ "label": "", "url": "" },
+                    ]
+                },				
+				{
+                    "title": "AI Framework",
+                    "links": [
+						{ "label": "langchain", "url": "https://www.langchain.com/" },
+						//{ "label": "", "url": "" },						
+                    ]
+                },
+				{
+                    "title": "AI Low/No Code",
+                    "links": [
+						{ "label": "Flowise", "url": "https://flowiseai.com/" },
+						{ "label": "LangFlow", "url": "https://www.langflow.org/" },						
+                    ]
+                },
+				
+				{
+                    "title": "AI Engine",
+                    "links": [
+						{ "label": "ONNX Runtime", "url": "https://onnxruntime.ai/" },
+						//{ "label": "", "url": "" },						
+                    ]
+                },
+ 
+				{
+                    "title": "LLM Tools",
+                    "links": [
+                        { "label": "ollma", "url": "https://ollama.ai/" },
+						{ "label": "GPT4ALL", "url": "https://gpt4all.io/index.html" },		
+						{ "label": "LM Studio", "url": "https://lmstudio.ai/" },
+						{ "label": "Mistral vLLM", "url": "https://docs.mistral.ai/self-deployment/overview" },						
+                    ]
+                },		
+{
+                    "title": "AI Code Tools",
+                    "links": [
+						{"label": "zzzCode", "url": "https://zzzcode.ai"},								 
+                    ]
+                },				
+            ]
+        };
+
+
+        // Function to generate links based on JSON data
+        function generateLinks(data,divtag) {
+            var headersContainer = $('#' + divtag);
+            data.headers.forEach(function (header) {
+                var headerDiv = $('<div class="mt-5"></div>');
+
+                var linkGroup = $('<div class="mt-1"></div>');
+                header.links.forEach(function (link) {
+                    var anchor = $('<a href="' + link.url + '" class="btn btn-primary" target="_blank">' + link.label + '</a>');
+                    linkGroup.append(anchor);
+                });
+
+                // Button to open all links in the header
+                var openAllButton = $('<button type="button" class="btn btnsmall btn-success">Open All</button>');
+                openAllButton.click(function () {
+                    var originalWindow = window;
+                    linkGroup.find('a').each(function () {
+                        $(this)[0].click()
+                    });
+                    originalWindow.focus();
+                });
+
+                var headerTitle = $('<div class="ml-3" style="display:block"><h5>' + header.title + '</h5></div>');
+                headerTitle.append(openAllButton);
+                headerDiv.append(headerTitle);
+                headerDiv.append(linkGroup);
+
+                headersContainer.append(headerDiv);
+            });
+        }
+
+        // Call the function with the JSON data
+        generateLinks(headerData,'headers');
+		generateLinks(sliderData,'slider');
+    </script>
+</body>
+</html>
