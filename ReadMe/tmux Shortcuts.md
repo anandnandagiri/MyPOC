@@ -3,6 +3,7 @@
 | **Category**          | **Action**                          | **Shortcut**            |
 |-----------------------|-------------------------------------|-------------------------|
 | **Session Management**| Create a new session                | `tmux new -s session_name` |
+|                       | Attach default session              | `tmux a`              |
 |                       | Detach from session                 | `Ctrl+b d`              |
 |                       | List sessions                       | `tmux ls`               |
 |                       | Attach to a session                 | `tmux attach -t session_name` |
