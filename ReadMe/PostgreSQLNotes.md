@@ -1,5 +1,8 @@
 #### Important Stats View
 ```
+select  * from  pg_settings
+```
+```
 select * from pg_stat_activity 
 ```
 ```
