@@ -13,6 +13,25 @@ SELECT * FROM pg_statio_user_tables;
 SELECT * FROM pg_stat_bgwriter;
 SELECT locktype, database, relation::regclass, mode, pid FROM pg_locks;
 ```
+#### Get Absolute File paths for each table:
+```
+--Note: Ensure you running below query on the database which you need table absolute file path
+
+SELECT 
+    c.relname AS table_name,
+    pg_relation_filepath(c.oid) AS relative_file_path,
+    CONCAT(data_directory, '/', pg_relation_filepath(c.oid)) AS absolute_file_path
+FROM 
+    pg_class c
+JOIN 
+    pg_namespace n ON n.oid = c.relnamespace,
+    (SELECT setting AS data_directory FROM pg_settings WHERE name = 'data_directory') AS dir
+WHERE 
+    c.relkind = 'r' AND n.nspname NOT IN ('pg_catalog', 'information_schema')
+ORDER BY 
+    c.relname;
+```
+
 #### Check Setting
 ```
 SELECT setting::float FROM pg_settings WHERE name = 'max_connections';
