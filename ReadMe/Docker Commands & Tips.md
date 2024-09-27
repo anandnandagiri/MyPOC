@@ -99,6 +99,11 @@ Docker Remove All Images which are not running
 docker image prune --all
 docker rmi $(docker images --filter "dangling=true" -q --no-trunc)
 ```
+Docker Remove All Container which are not running
+```
+docker container prune
+```
+
 Docker Copy From File From Image
 ```
 docker cp <container name or ID>:<Source File>  <Destination File>
