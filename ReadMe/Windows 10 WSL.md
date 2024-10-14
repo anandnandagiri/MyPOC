@@ -18,7 +18,12 @@ cd /mnt/c/Users/
 #### WSL Commands 
 ```
 wsl -l -v
-wsl.exe --set-version <linux distro> 2
+wsl --set-version <linux distro> 2
+wsl --set-default <linux distro>
+
+wsl --unregister <linux distro>
+
+wsl --terminate <linux distro>
 wsl --shutdown
 ```
 #### Troubleshoot 
