@@ -160,5 +160,8 @@ ip route add default via 192.168.1.100
 ip route del 10.10.20.0/24
 cat /etc/network/interfaces
 ```
-
-
+#### Linux Paths
+```
+pgadmin backup folder path
+/var/lib/pgadmin/storage/anand_vaapps.com
+```
