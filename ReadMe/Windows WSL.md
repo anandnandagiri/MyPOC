@@ -17,12 +17,17 @@ cd /mnt/c/Users/
 
 #### WSL Commands 
 ```
-wsl -l -v
 wsl --status
+wsl -l -v
+wsl --update
 
+wsl --set-default-version <Version#>
 wsl --set-version <linux distro> 2
-wsl --set-default <linux distro>
 
+wsl -l -o
+wsl --install -d  <linux distro>
+
+wsl --set-default <linux distro>
 wsl --distribution <linux distro>
 
 wsl --unregister <linux distro>
