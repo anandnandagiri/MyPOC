@@ -18,6 +18,8 @@ cd /mnt/c/Users/
 #### WSL Commands 
 ```
 wsl -l -v
+wsl --status
+
 wsl --set-version <linux distro> 2
 wsl --set-default <linux distro>
 
