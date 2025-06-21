@@ -23,6 +23,8 @@ wsl --status
 wsl --set-version <linux distro> 2
 wsl --set-default <linux distro>
 
+wsl --distribution <linux distro>
+
 wsl --unregister <linux distro>
 
 wsl --terminate <linux distro>
